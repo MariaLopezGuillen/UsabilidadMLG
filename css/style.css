@@ -582,8 +582,8 @@ nav li:nth-child(2) {
 }
 
 #highlight {
-  color: #ea8478;
-  font-size: 1.25rem;
+width: 200px;
+height: 200px;
 }
 
 .gallery {
