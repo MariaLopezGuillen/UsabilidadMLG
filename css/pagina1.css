@@ -22,7 +22,7 @@
     cursor: pointer;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
   }
-  
+  /*Lo he intentado con una imagen offline y no funciona*/
   .disney:hover {
      background: url('https://prod-ripcut-delivery.disney-plus.net/v1/rawFiles/disney/RAW_C061B00E543326DA345FBF996B4D3D76422B58A49FDEE9AD9A2664618619A8F9');
     background-size: cover;
