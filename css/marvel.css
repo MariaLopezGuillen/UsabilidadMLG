@@ -331,3 +331,15 @@
   text-decoration: none;
   cursor: pointer;
 }
+/* Flecha */
+.mobile-arrow {
+  display: none; /* Oculto por defecto */
+  font-size:  2em; /* Ajusta el tamaño según sea necesario */
+  padding:  10px; /* Agrega algo de espacio alrededor de la flecha */
+}
+
+@media (max-width:  767px) {
+  .mobile-arrow {
+    display: block; /* Visible en móviles */
+  }
+}
