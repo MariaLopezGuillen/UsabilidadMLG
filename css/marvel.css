@@ -58,7 +58,7 @@ body {
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 500;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .search-box:focus {
@@ -162,8 +162,8 @@ body {
 
 .video-card {
   position: relative;
-  min-width: calc(100% / 5 - 10px);
-  width: calc(100% / 5 - 10px);
+  min-width: calc(100%/5 - 10px);
+  width: calc(100%/5 - 10px);
   height: 100%;
   border-radius: 5px;
   overflow: hidden;
@@ -226,7 +226,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   margin-right: 10px;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .card-img {
@@ -288,7 +288,7 @@ body {
 }
 
 .watchlist-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -5px;
@@ -336,62 +336,4 @@ body {
 .pre-btn:hover img,
 .nxt-btn:hover img {
   opacity: 1;
-}
-
-/* Modal */
-/* styles.css */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Flecha */
-.mobile-arrow {
-  display: none;
-  /* Oculto por defecto */
-  font-size: 2em;
-  /* Ajusta el tamaño según sea necesario */
-  padding: 10px;
-  /* Agrega algo de espacio alrededor de la flecha */
-}
-
-@media (max-width: 767px) {
-  .mobile-arrow {
-    display: block;
-    /* Visible en móviles */
-  }
-}
-
-iframe {
-  width: 430px;
-  height: 250px;
 }
