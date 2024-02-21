@@ -1,0 +1,40 @@
+<!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales
+            peliculas</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li><a class="dropdown-item" href="disney.html">Disney</a></li>
+            <li><a class="dropdown-item" href="marvel.html">Marvel</a></li>
+            <li><a class="dropdown-item" href="pixar">Pixar</a></li>
+            <li><a class="dropdown-item" href="sw.html">Star Wars</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Enlaces Rápidos</h6>
+          <ul class="footer-links">
+            <li><a href="aboutus.html">Sobre Nosotros</a></li>
+            <li><a href="contactus.html">Contactanos</a></li>
+            <li><a href="politicprivacy.html">Politica de Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+            <a href="#">MLGweb</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>

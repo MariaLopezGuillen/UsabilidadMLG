@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   width: 100%;
   background: #0c111b;
@@ -33,7 +32,6 @@ body {
   display: flex;
   list-style: none;
 }
-
 .nav-items a {
   text-decoration: none;
   margin-left: 20px;
@@ -50,7 +48,7 @@ body {
 .search-box {
   border: none;
   border-bottom: 1px solid #aaa;
-  background: transparent;
+  background-color: transparent;
   outline: none;
   height: 30px;
   color: #fff;
@@ -67,7 +65,7 @@ body {
 }
 
 .sub-btn {
-  background: #1f80e0;
+  background-color: #1f80e0;
   height: 30px;
   padding: 0 20px;
   color: #fff;
@@ -104,6 +102,7 @@ body {
   height: 100%;
   position: relative;
   margin: auto;
+  cursor: pointer;
 }
 
 .slider {
@@ -168,6 +167,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   background: #030b17;
+  cursor: pointer;
 }
 
 .video-card-image,
@@ -178,7 +178,7 @@ body {
 }
 
 .card-video {
-  position: absolute;
+  position: relative;
 }
 
 .video-card:hover .video-card-image {
@@ -205,7 +205,7 @@ body {
   position: relative;
   width: 92%;
   padding-left: 10px;
-  height: 220px;
+  height: 220PX;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -227,20 +227,19 @@ body {
   overflow: hidden;
   margin-right: 10px;
   transition: .5s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card:hover .card-body {
+  opacity: 1;
 }
 
 .card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.card:hover .card-body {
-  opacity: 1;
 }
 
 .card-body {
@@ -284,7 +283,8 @@ body {
   margin: 5px 0;
   cursor: pointer;
   padding: 10px 5px;
-  border-radius: 5px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .watchlist-btn::before {
@@ -294,7 +294,7 @@ body {
   left: -5px;
   height: 35px;
   width: 35px;
-  background-image: url(images/add.png);
+  background-image: url(add.png);
   background-size: cover;
   transform: scale(0.4);
 }
@@ -302,7 +302,7 @@ body {
 .watchlist-btn:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
-}
+} 
 
 .pre-btn,
 .nxt-btn {
@@ -336,4 +336,4 @@ body {
 .pre-btn:hover img,
 .nxt-btn:hover img {
   opacity: 1;
-}
+} 

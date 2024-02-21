@@ -9,9 +9,9 @@
 
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css/marvel.css">
-  <link rel="stylesheet" href="css/modal.css">
   <link rel="shortcut icon" href="img/logodisney.png" type="image/x-icon">
   <script src="js/style.js"></script>
+  <script src="js/marvel.js"></script>
   <title>WikiDisney +</title>
 </head>
 
@@ -50,220 +50,239 @@
       </div>
     </div>
   </nav>
-<!-- Marvel -->
-<div class="carousel-container">
-  <div class="carousel">
-    <div class="slider">
-      <div class="slide-content">
-        <h1 class="movie-title">loki</h1>
+  <!-- Marvel -->
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="slider">
+        <div class="slide-content">
+          <h1 class="movie-title">loki</h1>
+        </div>
+        <img src="img/marvel/headerloki.png" alt="">
       </div>
-      <img src="img/marvel/headerloki.png" alt="">
     </div>
   </div>
-</div>
 
-<!-- Primer carrusel -->
-<h1 class="title">PELICULAS</h1>
-<div class="movies-list">
-  <button id="nxt-btn" class="nxt-btn"><img
-      src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/nxt.png" alt=""></button>
-  <div class="card-container">
-    <!-- ... (Your movie cards and modals) ... -->
-  </div>
-</div>
-
-<!-- Modal for La Dama y El Vagabundo -->
-<div id="dame" class="modalmask">
-  <div class="modalbox movedown">
-    <a href="#close" title="Close" class="close">X</a>
-    <h2>La Dama y El Vagabundo</h2>
-    <b>Sinopsis:</b>
-    <p>
-      "La Dama y el Vagabundo" es una película animada de Disney lanzada en 1955. La historia se centra en dos
-      perros: Dama, una cocker spaniel mimada y bien cuidada, y Golfo, un perro callejero conocido como el
-      "vagabundo". Sus mundos chocan cuando Dama, al principio ingenua sobre la vida exterior de su hogar, se
-      encuentra en situaciones fuera de su zona de confort.
-    </p>
-    <iframe src="https://www.youtube.com/embed/f5i7-6dvS4Q"
-      title="La Dama y el Vagabundo de Disney+ | Tráiler oficial en español | HD" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </div>
-</div>
-
-<!-- Modal for Aladdin -->
-<div id="aladin" class="modalmask">
-  <div class="modalbox movedown">
-    <a href="#close" title="Close" class="close">X</a>
-    <h2>Aladdin</h2>
-    <b>Sinopsis:</b>
-    <p>"Aladdín" es una película animada de Disney lanzada en 1992. La historia se inspira en el cuento
-      árabe "Aladino y la lámpara maravillosa" de "Las Mil y Una Noches". La trama sigue a Aladdín, un joven ladrón
-      que vive en la ciudad ficticia de Agrabah. Su vida da un giro cuando encuentra una lámpara mágica que contiene a
-      un genio que tiene el poder de conceder tres deseos.
-    </p>
-    <iframe src="https://www.youtube.com/embed/eTjHiQKJUDY"
-      title="Aladdin (1992) Trailer #1 | Movieclips Classic Trailers" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </div>
-</div>
-
-<!-- Modal for Wish -->
-<div id="wish" class="modalmask">
-  <div class="modalbox movedown">
-    <a href="#close" title="Close" class="close">X</a>
-    <h2>Wish</h2>
-    <b>Sinopsis:</b>
-    <p>
-      Asha y una pequeña bola de energía ilimitada llamada Star demuestran que cuando la voluntad de un ser humano
-      valiente se conecta con la magia de las estrellas, pueden suceder cosas maravillosas.
-    </p>
-    <iframe src="https://www.youtube.com/embed/Wksl-PoHC4w"
-      title="Wish: El Poder de los Deseos | Teaser Tráiler Oficial en español | HD" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </div>
-</div>
-
-<!-- Modal for Enredados -->
-<div id="enredados" class="modalmask">
-  <div class="modalbox movedown">
-    <a href="#close" title="Close" class="close">X</a>
-    <h2>Enredados</h2>
-    <b>Sinopsis:</b>
-    <p>
-      Rapunzel es una princesa que fue secuestrada y encerrada en lo alto de un torreón cuando tan sólo era una
-      recién nacida. Años después, la protagonista ha crecido y se ha convertido en una hermosísima adolescene
-      valiente y decidida, con una cabellera de 21 metros de largo además. Tras tanto tiempo allí metida sin saber
-      nada del exterior, ve llegado el momento de escapar.
-    </p>
-    <iframe src="https://www.youtube.com/embed/ee3XOCH-pok" title="Enredados | Trailer Oficial | Disney Oficial"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </div>
-</div>
-
-  <!--  -->
-  <!-- Series -->
-  <h1 class="title">SERIES</h1>
+  <!-- primer carrusel -->
+  <h1 class="title">PELICULAS</h1>
   <div class="movies-list">
-    <button class="pre-btn"><img
-        src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/pre.png" alt=""></button>
-    <button class="nxt-btn"><img
-        src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/nxt.png" alt=""></button>
+
     <div class="card-container">
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%201.png"
-          class="card-img" alt="">
+        <img src="img/marvel/ironman.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Iron Man</h2>
+          </h6>
+          <a href="#iron" class="watchlist-btn">Ver</a>
+        </div>
+      </div>
+      <!--  -->
+      
+      <!--  -->
+      <div class="card">
+        <img src="img/marvel/hulk.jpg" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Hulk</h2>
+          <button class="watchlist-btn" onclick="openmodal()">Ver</button>
+          <!--  -->
+
+          <!--  -->
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%202.png"
-          class="card-img" alt="">
+        <img src="img/marvel/deadpool.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Deadpool</h2>
+          </h6>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+
+      </div>
+      <div class="card">
+        <img src="img/marvel/avengers.png" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Avengers</h2>
+          </h6>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%203.png"
-          class="card-img" alt="">
+        <img src="img/marvel/thor.png" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Thor</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%204.png"
-          class="card-img" alt="">
+        <img src="img/marvel/galaxia.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Guardianes de la Galaxia</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%205.png"
-          class="card-img" alt="">
+        <img src="img/marvel/avengerage.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Avengers: Age of Ultron</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%206.png"
-          class="card-img" alt="">
+        <img src="img/marvel/strange.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Dr. Strange</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%207.png"
-          class="card-img" alt="">
+        <img src="img/marvel/black.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Black Panther</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%208.png"
-          class="card-img" alt="">
+        <img src="img/marvel/vengadores.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Avengers: Infinity War</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%209.png"
-          class="card-img" alt="">
+        <img src="img/marvel/spider.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Spider-Man: No Way Home"</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card">
+        <img src="img/marvel/antman.jpg" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Spider-Man: No Way Home"</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%2010.png"
-          class="card-img" alt="">
+        <img src="img/marvel/galaxiav2.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Spider-Man: No Way Home"</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%2011.png"
-          class="card-img" alt="">
+        <img src="img/marvel/viuda-negra.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
+          <h2 class="name">Spider-Man: No Way Home"</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%2012.png"
-          class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">movie name</h2>
-          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-          <button class="watchlist-btn">add to watchlist</button>
-        </div>
+      <!-- Series -->
+    </div>
+  </div>
+  <h1 class="title">SERIES</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="img/marvel/loki.png" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Loki</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/wanda.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Wanda Vision</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/thefalcon.png" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">The Falcon and the Winter Soldier</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/what.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">What if...?(Qué pasaria si....)</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/hawkeye.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Armors Wars</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/ihumans.PNG" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Inhumanos</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/elegidos.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">The Gifted: Los elegidos </h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/capa.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Capa y Puñal</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/runways.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Runaways</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/luna.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Caballerlo Luna</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/groot.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Yo soy Groot
+        </h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/cabezon.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">M.O.D.O.K. </h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/jessi.jfif" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Jessica Jones</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/mono.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Hit Monkey</h2>
+        <button class="watchlist-btn">Ver</button>
       </div>
     </div>
   </div>
+
+
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="container">

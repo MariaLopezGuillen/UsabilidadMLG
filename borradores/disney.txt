@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/marvel.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="shortcut icon" href="img/logodisney.png" type="image/x-icon">
+  <script src="js/style.js"></script>
+  <title>WikiDisney +</title>
+</head>
+
+<body>
+  <!--  -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logodisney.png" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Disney+
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="disney.html">Disney</a></li>
+              <li><a class="dropdown-item" href="marvel.html">Marvel</a></li>
+              <li><a class="dropdown-item" href="pixar.html">Pixar</a></li>
+              <li><a class="dropdown-item" href="sw.html">Star Wars</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Marvel -->
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="slider">
+        <div class="slide-content">
+          <h1 class="movie-title">Loki</h1>
+        </div>
+        <img src="img/marvel/headerloki.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Primer carrusel -->
+  <h1 class="title">PELÍCULAS</h1>
+  <div class="movies-list">
+    <div class="card-container">
+      <!-- Película 1 -->
+      <div class="card">
+        <img src="img/disney/zafa.jfif" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Zafarrancho en el Rancho</h2>
+          <a href="#zafa" class="watchlist-btn">Ver</a>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="zafa" class="modalmask">
+        <div class="modalbox movedown">
+          <a href="#close" title="Cerrar" class="close">X</a>
+          <h2>Zafarrancho en el Rancho</h2>
+          <b>Sinopsis:</b>
+          <p>En "Zafarrancho en el Rancho", un vaquero llamado Buck se une a un grupo de animales parlantes para detener
+            a un villano llamado Alameda Slim que está robando ganado en el Salvaje Oeste y salvar sus hogares.</p>
+          <iframe src="https://www.youtube.com/embed/lUKfk2EIaCk" title="Zafarrancho en el Rancho (Trailer español)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- Película 2 -->
+      <div class="card">
+        <img src="img/disney/chicken.jfif" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Chicken Little</h2>
+          <a href="#chick" class="watchlist-btn">Ver</a>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="chick" class="modalmask">
+        <div class="modalbox movedown">
+          <a href="#close" title="Cerrar" class="close">X</a>
+          <h2>Chicken Little</h2>
+          <b>Sinopsis:</b>
+          <p>"Chicken Little" es una película animada de Disney lanzada en 2005. La historia sigue a Chicken Little, un
+            joven pollo que causa un gran revuelo en su ciudad cuando afirma que el cielo está cayendo. A pesar de las
+            burlas y la incredulidad de sus compañeros, Chicken Little y un grupo de amigos inusuales, incluidos un
+            cerdo, un pato y una ardilla, se embarcan en una aventura para salvar su hogar de una inminente invasión
+            alienígena.</p>
+          <iframe src="https://www.youtube.com/embed/lr1vBnZ15rc" title="CHICKEN LITTLE (Trailer español)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- Película 3 -->
+      <div class="card">
+        <img src="img/disney/oliver.jpg" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Oliver y su pandilla</h2>
+          <a href="#oliver" class="watchlist-btn">Ver</a>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="oliver" class="modalmask">
+        <div class="modalbox movedown">
+          <a href="#close" title="Cerrar" class="close">X</a>
+          <h2>Oliver y su pandilla</h2>
+          <b>Sinopsis:</b>
+          <p>"Oliver y su pandilla" es una película de animación de Disney estrenada en 1988. La historia sigue a Oliver,
+            un gatito huérfano que se une a una pandilla de perros callejeros liderada por Dodger, en las calles de la
+            ciudad de Nueva York.</p>
+          <iframe src="https://www.youtube.com/embed/1u5q19VvRvA" title="Oliver y su Pandilla (Tráiler en Vídeo)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- Película 4 -->
+      <div class="card">
+        <img src="img/disney/poca.jfif" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Pocahontas</h2>
+          <a href="#poca" class="watchlist-btn">Ver</a>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="poca" class="modalmask">
+        <div class="modalbox movedown">
+          <a href="#close" title="Cerrar" class="close">X</a>
+          <h2>Pocahontas</h2>
+          <b>Sinopsis:</b>
+          <p>"Pocahontas" es una película animada de Disney que narra el encuentro entre la indígena Pocahontas y el
+            colono inglés John Smith en la Colonia de Virginia.</p>
+          <iframe src="https://www.youtube.com/embed/-WrsSY-YVPg" title="Pocahontas (Tráiler 1 en Vídeo)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+  <!-- Series -->
+  <h1 class="title">SERIES</h1>
+  <div class="movies-list">
+    <div class="card-container">
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%201.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%202.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%203.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%204.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%205.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%206.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%207.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%208.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%209.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%2010.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%2011.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/kunaal438/disney-plus-clone/master/images/poster%2012.png"
+          class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">movie name</h2>
+          <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+          <button class="watchlist-btn">add to watchlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales
+            peliculas</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li><a class="dropdown-item" href="disney.html">Disney</a></li>
+            <li><a class="dropdown-item" href="marvel.html">Marvel</a></li>
+            <li><a class="dropdown-item" href="pixar">Pixar</a></li>
+            <li><a class="dropdown-item" href="sw.html">Star Wars</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Enlaces Rápidos</h6>
+          <ul class="footer-links">
+            <li><a href="aboutus.html">Sobre Nosotros</a></li>
+            <li><a href="contactus.html">Contactanos</a></li>
+            <li><a href="politicprivacy.html">Politica de Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+            <a href="#">MLGweb</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
