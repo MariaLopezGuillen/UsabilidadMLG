@@ -1,53 +1,11 @@
-.modalmask {
-    position: fixed;
-    font-family: Arial, sans-serif;
-    top:   0;
-    right:   0;
-    bottom:   0;
-    left:   0;
-    background: rgba(255, 255, 255, 0.197);
-    z-index:   99999;
-    opacity:   1; /* Ajusta la opacidad a  1 si quieres que el modal sea visible */
-    -webkit-transition: opacity   400ms ease-in;
-    -moz-transition: opacity   400ms ease-in;
-    transition: opacity   400ms ease-in;
-    pointer-events: none;
-}
-.modalmask:target {
-    opacity:1;
-    pointer-events: auto;
-}
-/* Estilo de la ventana del modal */
-.modalbox{
-    width:   600px;
-    position:fixed;
-    top:   50%;
-    left:   50%;
-    transform: translate(-50%, -50%);   
-    padding:   5px   20px   13px   20px;
-    background: #ffffffc7;
-    border-radius:3px;
-}
-
-/* Movimientos del modal */
-.movedown {
-    margin:   0 auto; /* Esto centrará el modal horizontalmente */
-}
-/* Botón de cerrar */
-.close {
-    background: #FFFFFF; /* Cambiado el color de fondo a blanco para una mejor visibilidad */
-    color: #000000; /* Cambiado el color del texto a negro para una mejor visibilidad */
-    line-height:   25px;
-    position: absolute;
-    right:   1px;
-    text-align: center;
-    top:   1px;
-    width:   24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius:3px;
-}
-.close:hover {
-    background: #FAAC58;
-    color:#222;
-}
+.contenido-modal {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+  }
