@@ -62,7 +62,6 @@ section {
 
 .row  {
   display: flex;
-  flwx-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
