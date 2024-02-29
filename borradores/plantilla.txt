@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css/marvel.css">
-  <link rel="stylesheet" href="css/modal.css">
   <link rel="shortcut icon" href="img/logodisney.png" type="image/x-icon">
   <script src="js/style.js"></script>
   <script src="js/marvel.js"></script>
@@ -56,9 +55,9 @@
     <div class="carousel">
       <div class="slider">
         <div class="slide-content">
-          <h1 class="movie-title">Aladdin</h1>
+          <h1 class="movie-title">loki</h1>
         </div>
-        <img src="img/disney/headeraladin.jfif" alt="">
+        <img src="img/marvel/headerloki.png" alt="">
       </div>
     </div>
   </div>
@@ -69,112 +68,111 @@
 
     <div class="card-container">
       <div class="card">
-        <img src="img/disney/dama.jpg" class="card-img" alt="">
+        <img src="img/marvel/ironman.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">La Dama y el Vagabundo</h2>
+          <h2 class="name">Iron Man</h2>
           </h6>
-          <button href="#dama" class="watchlist-btn">Ver</button>
+          <a href="#iron" class="watchlist-btn">Ver</a>
         </div>
       </div>
-  <!-- Modal -->
-  <div class="modal fade" id="dama" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>This is a large modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+      <!--  -->
+      
       <!--  -->
       <div class="card">
-        <img src="img/disney/bolt.jpg" class="card-img" alt="">
+        <img src="img/marvel/hulk.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Bolt</h2>
-          <button class="watchlist-btn">Ver</button>
-          <!-- Modal-->
+          <h2 class="name">Hulk</h2>
+          <button class="watchlist-btn" onclick="openmodal()">Ver</button>
+          <!--  -->
 
           <!--  -->
         </div>
       </div>
       <div class="card">
-        <img src="img/disney/dame.jpg" class="card-img" alt="">
+        <img src="img/marvel/deadpool.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">El Jorobado de Notre Dame</h2>
+          <h2 class="name">Deadpool</h2>
           </h6>
           <button class="watchlist-btn">Ver</button>
         </div>
 
       </div>
       <div class="card">
-        <img src="img/disney/enredaos.jpg" class="card-img" alt="">
+        <img src="img/marvel/avengers.png" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Enredados</h2>
+          <h2 class="name">Avengers</h2>
           </h6>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/disney/frozen.jpg" class="card-img" alt="">
+        <img src="img/marvel/thor.png" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Frozen</h2>
-          <button type="button"data-toggle="modal" data-target="#myModal" class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/oso.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Hermanos Oso</h2>
+          <h2 class="name">Thor</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/disney/inside.jpg" class="card-img" alt="">
+        <img src="img/marvel/galaxia.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Inside Out</h2>
+          <h2 class="name">Guardianes de la Galaxia</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/disney/king.jpg" class="card-img" alt="">
+        <img src="img/marvel/avengerage.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">El Rey León</h2>
+          <h2 class="name">Avengers: Age of Ultron</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/disney/raton.jpg" class="card-img" alt="">
+        <img src="img/marvel/strange.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Los Rescatadores</h2>
+          <h2 class="name">Dr. Strange</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/disney/chicken.jfif" class="card-img" alt="">
+        <img src="img/marvel/black.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Chicken Little</h2>
+          <h2 class="name">Black Panther</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/disney/zafa.jfif" class="card-img" alt="">
+        <img src="img/marvel/vengadores.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Zafarrancho en el Rancho</h2>
+          <h2 class="name">Avengers: Infinity War</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/marvel/spider.jpg" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Spider-Man: No Way Home"</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <!--  -->
       <div class="card">
-        <img src="img/disney/oliver.jpg" class="card-img" alt="">
+        <img src="img/marvel/antman.jpg" class="card-img" alt="">
         <div class="card-body">
-          <h2 class="name">Oliver y su Pandilla</h2>
+          <h2 class="name">Spider-Man: No Way Home"</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/marvel/galaxiav2.jpg" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Spider-Man: No Way Home"</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/marvel/viuda-negra.jpg" class="card-img" alt="">
+        <div class="card-body">
+          <h2 class="name">Spider-Man: No Way Home"</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
@@ -184,98 +182,107 @@
   <h1 class="title">SERIES</h1>
   <div class="card-container">
     <div class="card">
-      <img src="img/disney/adventures.jpg" class="card-img" alt="">
+      <img src="img/marvel/loki.png" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Las Aventuras de Rapunzel</h2>
+        <h2 class="name">Loki</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/ally.png" class="card-img" alt="">
+      <img src="img/marvel/wanda.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Austin y Ally</h2>
+        <h2 class="name">Wanda Vision</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/art.jpg" class="card-img" alt="">
+      <img src="img/marvel/thefalcon.png" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Art Attack</h2>
+        <h2 class="name">The Falcon and the Winter Soldier</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/bighero6.jpg" class="card-img" alt="">
+      <img src="img/marvel/what.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Big Hero 6: The Series</h2>
+        <h2 class="name">What if...?(Qué pasaria si....)</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/buho.jpg" class="card-img" alt="">
+      <img src="img/marvel/hawkeye.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">La Casa Buhos</h2>
+        <h2 class="name">Armors Wars</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/falls.jpg" class="card-img" alt="">
+      <img src="img/marvel/ihumans.PNG" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Gravity Falls</h2>
+        <h2 class="name">Inhumanos</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/desc.jpg" class="card-img" alt="">
+      <img src="img/marvel/elegidos.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Los Descendientes </h2>
+        <h2 class="name">The Gifted: Los elegidos </h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/jess.jpg" class="card-img" alt="">
+      <img src="img/marvel/capa.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Jessie</h2>
+        <h2 class="name">Capa y Puñal</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/mickey.jpg" class="card-img" alt="">
+      <img src="img/marvel/runways.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Mickey Mpuse</h2>
+        <h2 class="name">Runaways</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/padrinos.jpg" class="card-img" alt="">
+      <img src="img/marvel/luna.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Los Padrinos Mágicos</h2>
+        <h2 class="name">Caballerlo Luna</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/musica.jpg" class=" card-img" alt="">
+      <img src="img/marvel/groot.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">High School Musical
+        <h2 class="name">Yo soy Groot
         </h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/phineas.jpg" class="card-img" alt="">
+      <img src="img/marvel/cabezon.jpg" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Phineas and Ferb</h2>
+        <h2 class="name">M.O.D.O.K. </h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
     <div class="card">
-      <img src="img/disney/pato.jpg" class="card-img" alt="">
+      <img src="img/marvel/jessi.jfif" class="card-img" alt="">
       <div class="card-body">
-        <h2 class="name">Patoaventuras</h2>
+        <h2 class="name">Jessica Jones</h2>
+        <button class="watchlist-btn">Ver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/marvel/mono.jpg" class="card-img" alt="">
+      <div class="card-body">
+        <h2 class="name">Hit Monkey</h2>
         <button class="watchlist-btn">Ver</button>
       </div>
     </div>
   </div>
+
+
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="container">
