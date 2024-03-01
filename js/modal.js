@@ -1,25 +1,28 @@
-// Ventana modal
-var modal = document.getElementById("ventanaModal");
-
-// Botón que abre el modal
-var boton = document.getElementById("abrirModal");
-
-// Hace referencia al elemento <span> que tiene la X que cierra la ventana
-var span = document.getElementsByClassName("cerrar")[0];
-
-// Cuando el usuario hace click en el botón, se abre la ventana
-boton.addEventListener("click",function() {
-  modal.style.display = "block";
-});
-
-// Si el usuario hace click en la x, la ventana se cierra
-span.addEventListener("click",function() {
-  modal.style.display = "none";
-});
-
-// Si el usuario hace click fuera de la ventana, se cierra.
-window.addEventListener("click",function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-});
+function openModal(elementModal, elementClose){
+	const windowModal = document.getElementById(elementModal);
+	const buttonClose = document.getElementById(elementClose);
+	const body = document.getElementsByTagName("body")[0];
+   
+	// Agrega la clase para el fondo negro al <body>
+	body.classList.add('body-modal-open');
+   
+	windowModal.style.display = "flex";
+	body.style.overflow = "hidden";
+   
+	buttonClose.addEventListener("click", function(){
+	   windowModal.style.display = "none";
+	   body.style.overflow = "scroll";
+	   // Elimina la clase para el fondo negro al <body>
+	   body.classList.remove('body-modal-open');
+	});
+   
+	window.addEventListener("click", function(event){
+	   if (event.target == windowModal) {
+		 windowModal.style.display = "none";
+		 body.style.overflow = "scroll";
+		 // Elimina la clase para el fondo negro al <body>
+		 body.classList.remove('body-modal-open');
+	   }
+	});
+   }
+   
