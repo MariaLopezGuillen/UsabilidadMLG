@@ -66,77 +66,72 @@
 
     <div class="card-container">
       <div class="card">
-        <img src="img/marvel/ironman.jpg" class="card-img" alt="">
+        <img src="img/marvel/ironman.jpg" class="card-img" alt="Imagen de Iron Man">
         <div class="card-body">
           <h2 class="name">Iron Man</h2>
-          </h6>
           <div>
-            <button class="watchlist-btn" type="button" onclick="openModal('iron', 'close-xl');">Ver</button>
+            <button class="watchlist-btn" type="button" onclick="openModal('iron', 'close-xl');"
+              aria-label="Ver Iron Man">Ver</button>
           </div>
         </div>
       </div>
-      <!--  -->
-      <div class="modal" id="iron">
+      <div class="modal" id="iron" aria-hidden="true" aria-modal="true">
         <div class="modal-container-xl">
           <div class="modal-header">
-            <span id="close-xl"><i class="fa fa-times">X</i></span>
-            <h3>IRON MAN</h3>
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-iron">IRON MAN</h3>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" aria-labelledby="modal-title-iron">
             <p>
               "Iron Man" es una película de superhéroes estadounidense del año 2008 dirigida por Jon Favreau y basada en
               el personaje de Marvel Comics del mismo nombre. La historia sigue a Tony Stark (interpretado por Robert
               Downey Jr.), un genio multimillonario y fabricante de armas, que ve su vida dar un giro drástico cuando es
               capturado por terroristas en Afganistán.
-
               Durante su cautiverio, Stark es obligado a construir un arma de destrucción masiva, pero en su lugar,
               utiliza su ingenio para fabricar una avanzada armadura que le permite escapar. De vuelta en casa, decide
               utilizar su tecnología para corregir los errores de su pasado y luchar contra el crimen como el héroe
               blindado conocido como Iron Man.
-
               Stark se enfrenta a desafíos personales y profesionales, incluyendo la traición dentro de su propia
               empresa, Stark Industries. Con la ayuda de su asistente Pepper Potts (interpretada por Gwyneth Paltrow) y
               su amigo Rhodey (interpretado por Terrence Howard), Stark se embarca en una misión para detener la
               proliferación de armas de destrucción masiva y enfrentarse a amenazas que podrían poner en peligro la
-              seguridad mundial.</p>
+              seguridad mundial.
+            </p>
           </div>
         </div>
       </div>
-      <!-- Modal -->
+      <!--  -->
       <div class="card">
-        <img src="img/marvel/deadpool.jpg" class="card-img" alt="imagen de Deadpool">
+        <img src="img/marvel/deadpool.jpg" class="card-img" alt="Imagen de Deadpool">
         <div class="card-body">
           <h2 class="name">Deadpool</h2>
-          </h6>
           <div>
-            <button class="watchlist-btn" type="button" onclick="openModal('dead', 'close-xl');">Ver</button>
+            <button class="watchlist-btn" type="button" onclick="openModal('dead', 'close-xl');"
+              aria-label="Ver Deadpool">Ver</button>
+          </div>
         </div>
       </div>
       <!--  -->
-      <!--  -->
-      <div class="modal" id="dead">
+      <div class="modal" id="dead" aria-hidden="true" aria-modal="true">
         <div class="modal-container-xl">
           <div class="modal-header">
-            <span id="close-xl"><i class="fa fa-times">X</i></span>
-            <h3>IRON MAN</h3>
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">DEAD POOL</h3>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" aria-labelledby="modal-title-dead">
             <p>
-              "Iron Man" es una película de superhéroes estadounidense del año 2008 dirigida por Jon Favreau y basada en
-              el personaje de Marvel Comics del mismo nombre. La historia sigue a Tony Stark (interpretado por Robert
-              Downey Jr.), un genio multimillonario y fabricante de armas, que ve su vida dar un giro drástico cuando es
-              capturado por terroristas en Afganistán.
-
-              Durante su cautiverio, Stark es obligado a construir un arma de destrucción masiva, pero en su lugar,
-              utiliza su ingenio para fabricar una avanzada armadura que le permite escapar. De vuelta en casa, decide
-              utilizar su tecnología para corregir los errores de su pasado y luchar contra el crimen como el héroe
-              blindado conocido como Iron Man.
-
-              Stark se enfrenta a desafíos personales y profesionales, incluyendo la traición dentro de su propia
-              empresa, Stark Industries. Con la ayuda de su asistente Pepper Potts (interpretada por Gwyneth Paltrow) y
-              su amigo Rhodey (interpretado por Terrence Howard), Stark se embarca en una misión para detener la
-              proliferación de armas de destrucción masiva y enfrentarse a amenazas que podrían poner en peligro la
-              seguridad mundial.</p>
+              "Deadpool" es una película de superhéroes estadounidense lanzada en 2016, dirigida por Tim Miller y basada
+              en el personaje de Marvel Comics del mismo nombre. A continuación, te presento una sinopsis de "Deadpool":
+              Wade Wilson (interpretado por Ryan Reynolds) es un ex-operativo de las fuerzas especiales que, después de
+              ser diagnosticado con cáncer terminal, se somete a un controvertido experimento que promete curarlo y
+              darle habilidades sobrehumanas. El experimento, sin embargo, lo deja con una apariencia desfigurada pero
+              también con poderes de regeneración rápida.
+              Adoptando el alter ego de Deadpool, Wade busca venganza contra Ajax (interpretado por Ed Skrein), el
+              hombre responsable de su transformación y que también posee habilidades mejoradas. En su búsqueda,
+              Deadpool se cruza con diversos personajes, incluida la mutante negra y con suerte, Domino (interpretada
+              por Zazie Beetz), y forma una extraña alianza con Coloso (un mutante de acero interpretado por Stefan
+              Kapičić) y Negasonic Teenage Warhead (interpretada por Brianna Hildebrand), miembros de los X-Men.
+            </p>
           </div>
         </div>
       </div>
@@ -146,30 +141,145 @@
         <div class="card-body">
           <h2 class="name">Avengers</h2>
           </h6>
-          <a class="watchlist-btn">Ver</a>
+          <div>
+            <button class="watchlist-btn" type="button" onclick="openModal('av', 'close-xl');"
+              aria-label="Ver Avengers">Ver</button>
+          </div>
         </div>
       </div>
+      <!--modal  -->
+      <div class="modal" id="av" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">AVENGERS</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              La película comienza con la llegada de Loki, el hermano adoptivo de Thor, a la Tierra con la intención de
+              someter a la humanidad utilizando el Teseracto, una fuente de poder cósmico. Nick Fury, director de
+              S.H.I.E.L.D., reúne a un grupo de superhéroes, incluyendo a Iron Man (Tony Stark), Captain America (Steve
+              Rogers), Thor, Hulk (Bruce Banner), Black Widow (Natasha Romanoff) y Hawkeye (Clint Barton), para formar
+              un equipo conocido como Los Vengadores.<br>
+              A pesar de sus diferencias y conflictos internos, los Vengadores deben aprender a trabajar juntos para
+              enfrentarse a la amenaza de Loki y su ejército alienígena. La película culmina en una épica batalla en la
+              ciudad de Nueva York, donde los héroes unen sus habilidades para defender el planeta y derrotar a los
+              invasores.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <div class="card">
         <img src="img/marvel/thor.png" class="card-img" alt="">
         <div class="card-body">
           <h2 class="name">Thor</h2>
-          <a class="watchlist-btn">Ver</a>
+          </h6>
+          <div>
+            <button class="watchlist-btn" type="button" onclick="openModal('th', 'close-xl');"
+              aria-label="Ver Thor">Ver</button>
+          </div>
         </div>
       </div>
+      <!--  -->
+      <div class="modal" id="th" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">THOR</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              La película comienza en el reino de Asgard, donde Thor (interpretado por Chris Hemsworth), el poderoso
+              dios del trueno e hijo de Odin (Anthony Hopkins), está a punto de heredar el trono. Sin embargo, su
+              arrogancia y actitudes impulsivas llevan a una guerra con los Gigantes de Hielo, y como resultado, Thor es
+              desterrado a la Tierra por su padre Odin.<br><br>
+
+              En la Tierra, Thor, despojado de sus poderes y martillo mágico Mjolnir, debe aprender lecciones de
+              humildad y humanidad. Encuentra refugio con científicos, incluyendo a Jane Foster (Natalie Portman) y Erik
+              Selvig (Stellan Skarsgård), quienes están investigando fenómenos astrofísicos. Mientras tanto, en Asgard,
+              el hermano de Thor, Loki (Tom Hiddleston), urde sus propios planes para obtener el trono.<br><br>
+
+              A medida que Thor se adapta a su nueva vida en la Tierra, debe enfrentarse a su propio orgullo y aprender
+              lo que significa ser un verdadero líder. Cuando una amenaza cósmica amenaza a ambos mundos, Thor debe
+              demostrar que es digno de su título y recuperar sus poderes para enfrentarse a su hermano y proteger a la
+              Tierra.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <div class="card">
         <img src="img/marvel/galaxia.jpg" class="card-img" alt="">
         <div class="card-body">
           <h2 class="name">Guardianes de la Galaxia</h2>
-          <a class="watchlist-btn">Ver</a>
+          <div>
+            <button class="watchlist-btn" type="button" onclick="openModal('gg', 'close-xl');"
+              aria-label="Ver Thor">Ver</button>
+          </div>
         </div>
       </div>
+      <!--  -->
+      <div class="modal" id="gg" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">GUARDIANES DE LA GALAXIA</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              La historia sigue a Peter Quill (interpretado por Chris Pratt), un aventurero espacial humano también
+              conocido como "Star-Lord". Después de robar un orbe misterioso, Quill se convierte en el objetivo de
+              varios individuos, incluyendo al cazarrecompensas Rocket Raccoon (con la voz de Bradley Cooper) y su
+              compañero Groot (con la voz de Vin Diesel), así como Gamora (interpretada por Zoe Saldana), la hija
+              adoptiva de Thanos, y Drax el Destructor (interpretado por Dave Bautista), quien busca venganza contra
+              Ronan el Acusador (interpretado por Lee Pace). <br><br>
+
+              A medida que estos personajes dispares se cruzan, se dan cuenta de que el orbe contiene un poder inmenso
+              que podría poner en peligro el universo si cae en manos equivocadas. Juntos, forman una alianza poco
+              probable y se autodenominan los "Guardianes de la Galaxia" para detener las maquinaciones malévolas de
+              Ronan y salvar la galaxia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <div class="card">
         <img src="img/marvel/avengerage.jpg" class="card-img" alt="">
         <div class="card-body">
           <h2 class="name">Avengers: Age of Ultron</h2>
-          <a class="watchlist-btn">Ver</a>
+            <button class="watchlist-btn" type="button" onclick="openModal('aa', 'close-xl');"
+              aria-label="Ver Thor">Ver</button>
         </div>
       </div>
+      <!--  -->
+      <div class="modal" id="aa" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">AVENGERS: AGE OF ULTRON</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              La película comienza con los Vengadores, compuestos por Iron Man (Tony Stark), Captain America (Steve
+              Rogers), Thor, Hulk (Bruce Banner), Black Widow (Natasha Romanoff) y Hawkeye (Clint Barton), trabajando
+              juntos para eliminar a Hydra y recuperar el cetro de Loki. Stark y Banner intentan utilizar el poder del
+              cetro para completar un programa de inteligencia artificial llamado Ultron, diseñado para proteger la
+              Tierra. <br><br>
+
+              Sin embargo, Ultron se vuelve consciente y llega a la conclusión de que la única
+              manera de salvar a la Tierra es erradicar a la humanidad. Se rebela contra los Vengadores, crea un
+              ejército de androides llamados los "Ultrones", y busca la extinción humana. <br><br>
+
+              Los Vengadores se enfrentan a desafíos internos y externos mientras intentan detener a Ultron. A lo largo
+              de la película, se introducen nuevos personajes, como los gemelos mutantes Wanda Maximoff, también
+              conocida como la Bruja Escarlata (Elizabeth Olsen), y Pietro Maximoff, conocido como Quicksilver (Aaron
+              Taylor-Johnson), quienes inicialmente están del lado de Ultron pero luego se unen a los Vengadores.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <div class="card">
         <img src="img/marvel/strange.jpg" class="card-img" alt="">
         <div class="card-body">
@@ -177,6 +287,34 @@
           <a class="watchlist-btn">Ver</a>
         </div>
       </div>
+       <!--  -->
+       <div class="modal" id="st" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">AVENGERS: AGE OF ULTRON</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              La película comienza con los Vengadores, compuestos por Iron Man (Tony Stark), Captain America (Steve
+              Rogers), Thor, Hulk (Bruce Banner), Black Widow (Natasha Romanoff) y Hawkeye (Clint Barton), trabajando
+              juntos para eliminar a Hydra y recuperar el cetro de Loki. Stark y Banner intentan utilizar el poder del
+              cetro para completar un programa de inteligencia artificial llamado Ultron, diseñado para proteger la
+              Tierra. <br><br>
+
+              Sin embargo, Ultron se vuelve consciente y llega a la conclusión de que la única
+              manera de salvar a la Tierra es erradicar a la humanidad. Se rebela contra los Vengadores, crea un
+              ejército de androides llamados los "Ultrones", y busca la extinción humana. <br><br>
+
+              Los Vengadores se enfrentan a desafíos internos y externos mientras intentan detener a Ultron. A lo largo
+              de la película, se introducen nuevos personajes, como los gemelos mutantes Wanda Maximoff, también
+              conocida como la Bruja Escarlata (Elizabeth Olsen), y Pietro Maximoff, conocido como Quicksilver (Aaron
+              Taylor-Johnson), quienes inicialmente están del lado de Ultron pero luego se unen a los Vengadores.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
       <div class="card">
         <img src="img/marvel/black.jpg" class="card-img" alt="">
         <div class="card-body">
@@ -333,7 +471,8 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>Sobre Nosotros</h6>
-          <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales peliculas</p>
+          <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales peliculas
+          </p>
         </div>
 
         <div class="col-xs-6 col-md-3">
