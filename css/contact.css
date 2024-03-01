@@ -192,3 +192,8 @@ section {
     width: 100%;
   }
 }
+.card-img-top{
+  height: 55px;
+  width: auto;
+  margin-top: 5px;
+}
