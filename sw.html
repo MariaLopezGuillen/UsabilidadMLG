@@ -17,39 +17,41 @@
 
 <body>
   <!--  -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/logodisney.png" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Disney+
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="disney.html">Disney</a></li>
-              <li><a class="dropdown-item" href="marvel.html">Marvel</a></li>
-              <li><a class="dropdown-item" href="pixar.html">Pixar</a></li>
-              <li><a class="dropdown-item" href="sw.html">Star Wars</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactus.html">Contactanos</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logodisney.png" class="logo" alt="Logo Disney"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Disney+
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="disney.html">Disney</a></li>
+                <li><a class="dropdown-item" href="marvel.html">Marvel</a></li>
+                <li><a class="dropdown-item" href="pixar.html">Pixar</a></li>
+                <li><a class="dropdown-item" href="sw.html">Star Wars</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <!-- Marvel -->
   <div class="carousel-container">
     <div class="carousel">
@@ -63,120 +65,116 @@
   </div>
 
   <!-- primer carrusel -->
-  <h1 class="title">PELICULAS</h1>
+  <h1 class="title">RECOMENDADO PARA TI</h1>
   <div class="movies-list">
-
     <div class="card-container">
       <div class="card">
-        <img src="img/marvel/ironman.jpg" class="card-img" alt="">
+        <img src="img/sw/espe.jpeg" class="card-img"
+          alt="Imagen de La Guerra de las Galaxias: Episodio IV - Una Nueva Esperanza">
         <div class="card-body">
-          <h2 class="name">Iron Man</h2>
-          </h6>
-          <button class="watchlist-btn" onclick="openmodal()">Ver</button>
+          <h2 class="name">La Guerra de las Galaxias: Episodio IV - Una Nueva Esperanza</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/marvel/hulk.jpg" class="card-img" alt="">
+        <img src="img/sw/contra.jpeg" class="card-img" alt="Imagen de Star Wars: Episodio V - El Imperio Contraataca">
         <div class="card-body">
-          <h2 class="name">Hulk</h2>
-          <button class="watchlist-btn" onclick="openmodal()">Ver</button>
-          <!--  -->
+          <h2 class="name">Star Wars: Episodio V - El Imperio Contraataca</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/sw/retorno.jpg" class="card-img" alt="Imagen de Star Wars: Episodio VI - El Retorno del Jedi">
+        <div class="card-body">
+          <h2 class="name">Star Wars: Episodio VI - El Retorno del Jedi</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
 
-          <!--  -->
+      <div class="card">
+        <img src="img/sw/fantasma.jpg" class="card-img" alt="Imagen de Star Wars: Episodio I - La Amenaza Fantasma">
+        <div class="card-body">
+          <h2 class="name">Star Wars: Episodio I - La Amenaza Fantasma</h2>
+          <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/marvel/deadpool.jpg" class="card-img" alt="">
+        <img src="img/sw/clon.jpeg" class="card-img" alt="Imagen de Star Wars: Episodio II - El Ataque de los Clones">
         <div class="card-body">
-          <h2 class="name">Deadpool</h2>
-          </h6>
+          <h2 class="name">Star Wars: Episodio II - El Ataque de los Clones</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
+      </div>
+      <div class="card">
+        <img src="img/sw/sith.jpeg" class="card-img" alt="Imagen de Star Wars: Episodio III - La Venganza de los Sith">
+        <div class="card-body">
+          <h2 class="name">Star Wars: Episodio III - La Venganza de los Sith</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
 
-      </div>
       <div class="card">
-        <img src="img/marvel/avengers.png" class="card-img" alt="">
+        <img src="img/sw/rogue.jpg" class="card-img" alt="Imagen de Rogue One: Una Historia de Star Wars">
         <div class="card-body">
-          <h2 class="name">Avengers</h2>
-          </h6>
+          <h2 class="name">Rogue One: Una Historia de Star Wars</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/marvel/thor.png" class="card-img" alt="">
+        <img src="img/sw/clone.jpeg" class="card-img" alt="Imagen de Star Wars: The Clone Wars">
         <div class="card-body">
-          <h2 class="name">Thor</h2>
+          <h2 class="name">Star Wars: The Clone Wars</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/marvel/galaxia.jpg" class="card-img" alt="">
+        <img src="img/sw/desp.jpeg" class="card-img" alt="Imagen de Star Wars: El Despertar de la Fuerza">
         <div class="card-body">
-          <h2 class="name">Guardianes de la Galaxia</h2>
+          <h2 class="name">Star Wars: El Despertar de la Fuerza</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/marvel/avengerage.jpg" class="card-img" alt="">
+        <img src="img/sw/jeidi.jpg" class="card-img" alt="Imagen de Star Wars: Los Últimos Jedi">
         <div class="card-body">
-          <h2 class="name">Avengers: Age of Ultron</h2>
+          <h2 class="name">Star Wars: Los Últimos Jedi</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/sw/solo.jpg" class="card-img" alt="Imagen de Solo: Una Historia de Star Wars">
+        <div class="card-body">
+          <h2 class="name">Solo: Una Historia de Star Wars</h2>
+          <button class="watchlist-btn">Ver</button>
+        </div>
+      </div>
+      <!-- -->
+      <div class="card">
+        <img src="img/sw/sky.jpeg" class="card-img" alt="Imagen de Star Wars: El Ascenso de Skywalker">
+        <div class="card-body">
+          <h2 class="name">Star Wars: El Ascenso de Skywalker</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/marvel/strange.jpg" class="card-img" alt="">
+        <img src="img/sw/reme.jpeg" class="card-img" alt="Imagen de Star Wars: La remesa mala">
         <div class="card-body">
-          <h2 class="name">Dr. Strange</h2>
+          <h2 class="name">Star Wars: La remesa mala</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="img/marvel/black.jpg" class="card-img" alt="">
+        <img src="img/sw/acol.jpg" class="card-img" alt="Imagen de Star Wars: The Acolyte">
         <div class="card-body">
-          <h2 class="name">Black Panther</h2>
+          <h2 class="name">Star Wars: The Acolyte</h2>
           <button class="watchlist-btn">Ver</button>
         </div>
       </div>
-      <div class="card">
-        <img src="img/marvel/vengadores.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Avengers: Infinity War</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/marvel/spider.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Spider-Man: No Way Home"</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <!--  -->
-      <div class="card">
-        <img src="img/marvel/antman.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Spider-Man: No Way Home"</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/marvel/galaxiav2.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Spider-Man: No Way Home"</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/marvel/viuda-negra.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Spider-Man: No Way Home"</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <!-- Series -->
     </div>
+    <!-- Series -->
   </div>
-  <h1 class="title">SERIES</h1>
+  <h1 class="title">POPULAR</h1>
   <div class="card-container">
     <div class="card">
       <img src="img/marvel/loki.png" class="card-img" alt="">
