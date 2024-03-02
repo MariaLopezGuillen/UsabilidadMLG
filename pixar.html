@@ -31,7 +31,7 @@
               <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              </li>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Disney+
@@ -74,254 +74,328 @@
           <div class="card-body">
             <h2 class="name">Toy Story</h2>
             </h6>
-            <a href="#iron" class="watchlist-btn">Ver</a>
-          </div>
-        </div>
-        <!--  -->
+            <button class="watchlist-btn" type="button" onclick="openModal('jessi', 'close-xl');"
+              aria-label="Ver Thor">Ver</button>
 
-        <!--  -->
-        <div class="card">
-          <img src="img/pixar/bicho.jfif" class="card-img" alt="Imagen Bichos: Una aventura en miniatura">
-          <div class="card-body">
-            <h2 class="name">Bichos: Una aventura en miniatura</h2>
-            <button class="watchlist-btn" onclick="openmodal()">Ver</button>
-            <!--  -->
+          </div>
+          <!--  -->
+          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
+            <div class="modal-container-xl">
+              <div class="modal-header">
+                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+                <h3 id="modal-title-dead">
+                  TOY STORY</h3>
+              </div>
+              <div class="modal-body" aria-labelledby="modal-title-dead">
+                <p>
+                  "Toy Story" es una película animada que sigue la vida de juguetes que cobran vida cuando los humanos
+                  no están presentes. Woody, el vaquero favorito de Andy, se ve amenazado por la llegada de Buzz
+                  Lightyear, un juguete espacial. Juntos, deben superar rivalidades y aventuras para regresar a casa
+                  antes de que Andy y su familia se muden. La película celebra la amistad y la importancia de aceptar el
+                  cambio mientras los juguetes descubren su verdadero propósito.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card">
+            <img src="img/pixar/bicho.jfif" class="card-img" alt="Imagen Bichos: Una aventura en miniatura">
+            <div class="card-body">
+              <h2 class="name">Bichos: Una aventura en miniatura</h2>
+              <button class="watchlist-btn" type="button" onclick="openModal('jessi', 'close-xl');"
+                aria-label="Ver Thor">Ver</button>
+              <!--  -->
+            </div>
+          </div>
+          <!--  -->
+          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
+            <div class="modal-container-xl">
+              <div class="modal-header">
+                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+                <h3 id="modal-title-dead">
+                  BICHOS: UNA AVENTURA EN MINIATURA</h3>
+              </div>
+              <div class="modal-body" aria-labelledby="modal-title-dead">
+                <p>
+                  "Bichos: Una Aventura en Miniatura" es una película animada que sigue a Flik, una hormiga inventor, en
+                  su esfuerzo por salvar su colonia de una banda de saltamontes intimidantes. Para lograrlo, Flik
+                  recluta a un grupo de insectos marginados y juntos enfrentan desafíos emocionantes. La historia
+                  resalta la valentía, la diversidad y la importancia del trabajo en equipo, ofreciendo una encantadora
+                  perspectiva del mundo en miniatura de los insectos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card">
+            <img src="img/pixar/toy2.jfif" class="card-img" alt="Imagen de Toy Story 2">
+            <div class="card-body">
+              <h2 class="name">Toy Story 2</h2>
+              <button class="watchlist-btn" aria-label="Ver Toy Story 2">Ver</button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
+            <div class="modal-container-xl">
+              <div class="modal-header">
+                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+                <h3 id="modal-title-dead">
+                  TOY STORY 2</h3>
+              </div>
+              <div class="modal-body" aria-labelledby="modal-title-dead">
+                <p>
+                  "Toy Story 2" continúa la historia de los juguetes de Andy cuando Woody es secuestrado por un
+                  coleccionista de juguetes. Buzz Lightyear y el resto de la pandilla se embarcan en una misión para
+                  rescatarlo. En el camino, Woody descubre su pasado como estrella de un programa de televisión y se
+                  enfrenta a la elección entre regresar a casa con Andy o permanecer en el mundo de la colección. La
+                  película explora temas de lealtad, identidad y el valor de la amistad, ofreciendo una emocionante y
+                  conmovedora aventura para los personajes queridos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card">
+            <img src="img/pixar/mons.jfif" class="card-img" alt="Imagen de Monsters, Inc.">
+            <div class="card-body">
+              <h2 class="name">Monsters, Inc.</h2>
+              <button class="watchlist-btn" aria-label="Ver Monsters, Inc.">Ver</button>
+            </div>
+          </div>
+          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
+            <div class="modal-container-xl">
+              <div class="modal-header">
+                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+                <h3 id="modal-title-dead">
+                  MONSTERS, INC.</h3>
+              </div>
+              <div class="modal-body" aria-labelledby="modal-title-dead">
+                <p>
+                  "Monsters, Inc." es una película animada que se desarrolla en la ciudad de Monstruópolis, donde
+                  monstruos asustadores generan energía a partir de los gritos de los niños humanos. La trama sigue a
+                  James P. Sullivan (Sulley) y su amigo Mike Wazowski, quienes trabajan en la empresa Monsters, Inc. Un
+                  día, una niña humana llamada Boo llega al mundo de los monstruos, desencadenando una serie de eventos
+                  cómicos y emotivos. La película destaca la
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/cita.jpg" class="card-img" alt="Imagen de La primera cita de Raley">
+            <div class="card-body">
+              <h2 class="name">La primera cita de Raley</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/nemo.jfif" class="card-img" alt="Imagen de Buscando a Nemo">
+            <div class="card-body">
+              <h2 class="name">Buscando a Nemo</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/cars.jfif" class="card-img" alt="Imagen de Cars">
+            <div class="card-body">
+              <h2 class="name">Cars</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/increibles.jfif" class="card-img" alt="Imagen de Los Increibles">
+            <div class="card-body">
+              <h2 class="name">Los Increibles</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
 
-            <!--  -->
+          <div class="card">
+            <img src="img/pixar/rata.jpeg" class="card-img" alt="Imagen de Ratatouille">
+            <div class="card-body">
+              <h2 class="name">Ratatouille</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/walli.jpg" class="card-img" alt="Imagen de WALL·E">
+            <div class="card-body">
+              <h2 class="name">WALL·E</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/brave.jpeg" class="card-img" alt="Imagen de Brave">
+            <div class="card-body">
+              <h2 class="name">Brave</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/up.jfif" class="card-img" alt="Imagen de Up: Una Aventura de Altura">
+            <div class="card-body">
+              <h2 class="name">Up: Una Aventura de Altura</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/toy3.jfif" class="card-img" alt="Imagen de Toy Story 3">
+            <div class="card-body">
+              <h2 class="name">Toy Story 3</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/pixar/cars2.jfif" class="card-img" alt="Imagen de Cars 2">
+            <div class="card-body">
+              <h2 class="name">Cars 2</h2>
+              <button class="watchlist-btn">Ver</button>
+            </div>
+          </div>
+          <!-- Series -->
+        </div>
+      </div>
+      <h1 class="title">POPULAR</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="img/pixar/uni.jpeg" class="card-img" alt="Imagen de Monsters University">
+          <div class="card-body">
+            <h2 class="name">Monsters University</h2>
+            <button class="watchlist-btn">Ver</button>
           </div>
         </div>
         <div class="card">
-          <img src="img/pixar/toy2.jfif" class="card-img" alt="Imagen de Toy Story 2">
+          <img src="img/pixar/inside.jpeg" class="card-img" alt="Imagen de Inside Out">
           <div class="card-body">
-            <h2 class="name">Toy Story 2</h2>
-            <button class="watchlist-btn" aria-label="Ver Toy Story 2">Ver</button>
+            <h2 class="name">Inside Out</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/arlo.jpeg" class="card-img" alt="Imagen de El Viaje de Arlo">
+          <div class="card-body">
+            <h2 class="name">El Viaje de Arlo</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/dory.jpeg" class="card-img" alt="Imagen de Buscando a Dory">
+          <div class="card-body">
+            <h2 class="name">Buscando a Dory</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/coco.jpg" class="card-img" alt="Imagen de Coco">
+          <div class="card-body">
+            <h2 class="name">Coco</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/cars3.jpeg" class="card-img" alt="Imagen de Cars 3">
+          <div class="card-body">
+            <h2 class="name">Cars 3</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/inc2.jpeg" class="card-img" alt="Imagen de Los Increíbles 2">
+          <div class="card-body">
+            <h2 class="name">Los Increíbles 2</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/toy4.jpeg" class="card-img" alt="Imagen de Toy Story 4">
+          <div class="card-body">
+            <h2 class="name">Toy Story 4</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/on.jpeg" class="card-img" alt="Imagen de Onward">
+          <div class="card-body">
+            <h2 class="name">Onward</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/soul.jpg" class="card-img" alt="Imagen de Soul">
+          <div class="card-body">
+            <h2 class="name">Soul</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/luca.jpg" class="card-img" alt="Imagen de Luca">
+          <div class="card-body">
+            <h2 class="name">Luca</h2>
+            <button class="watchlist-btn">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pixar/light.jpeg" class="card-img" alt="Imagen de Lightyear">
+          <div class="card-body">
+            <h2 class="name">Lightyear</h2>
+            <button class="watchlist-btn">Ver</button>
           </div>
         </div>
 
         <div class="card">
-          <img src="img/pixar/mons.jfif" class="card-img" alt="Imagen de Monsters, Inc.">
+          <img src="img/pixar/red.jpeg" class="card-img" alt="Imagen de Red">
           <div class="card-body">
-            <h2 class="name">Monsters, Inc.</h2>
-            <button class="watchlist-btn" aria-label="Ver Monsters, Inc.">Ver</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="img/pixar/cita.jpg" class="card-img" alt="Imagen de La primera cita de Raley">
-          <div class="card-body">
-            <h2 class="name">La primera cita de Raley</h2>
+            <h2 class="name">Red</h2>
             <button class="watchlist-btn">Ver</button>
           </div>
         </div>
         <div class="card">
-          <img src="img/pixar/nemo.jfif" class="card-img" alt="Imagen de Buscando a Nemo">
+          <img src="img/pixar/ele.jpeg" class="card-img" alt="Imagen de Elemental">
           <div class="card-body">
-            <h2 class="name">Buscando a Nemo</h2>
+            <h2 class="name">Elemental</h2>
             <button class="watchlist-btn">Ver</button>
           </div>
         </div>
-        <div class="card">
-          <img src="img/pixar/cars.jfif" class="card-img" alt="Imagen de Cars">
-          <div class="card-body">
-            <h2 class="name">Cars</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/increibles.jfif" class="card-img" alt="Imagen de Los Increibles">
-          <div class="card-body">
-            <h2 class="name">Los Increibles</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="img/pixar/rata.jpeg" class="card-img" alt="Imagen de Ratatouille">
-          <div class="card-body">
-            <h2 class="name">Ratatouille</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/walli.jpg" class="card-img" alt="Imagen de WALL·E">
-          <div class="card-body">
-            <h2 class="name">WALL·E</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/brave.jpeg" class="card-img" alt="Imagen de Brave">
-          <div class="card-body">
-            <h2 class="name">Brave</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/up.jfif" class="card-img" alt="Imagen de Up: Una Aventura de Altura">
-          <div class="card-body">
-            <h2 class="name">Up: Una Aventura de Altura</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/toy3.jfif" class="card-img" alt="Imagen de Toy Story 3">
-          <div class="card-body">
-            <h2 class="name">Toy Story 3</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/cars2.jfif" class="card-img" alt="Imagen de Cars 2">
-          <div class="card-body">
-            <h2 class="name">Cars 2</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <!-- Series -->
       </div>
-    </div>
-    <h1 class="title">POPULAR</h1>
-    <div class="card-container">
-      <div class="card">
-        <img src="img/pixar/uni.jpeg" class="card-img" alt="Imagen de Monsters University">
-        <div class="card-body">
-          <h2 class="name">Monsters University</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/inside.jpeg" class="card-img" alt="Imagen de Inside Out">
-        <div class="card-body">
-          <h2 class="name">Inside Out</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/arlo.jpeg" class="card-img" alt="Imagen de El Viaje de Arlo">
-        <div class="card-body">
-          <h2 class="name">El Viaje de Arlo</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/dory.jpeg" class="card-img" alt="Imagen de Buscando a Dory">
-        <div class="card-body">
-          <h2 class="name">Buscando a Dory</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/coco.jpg" class="card-img" alt="Imagen de Coco">
-        <div class="card-body">
-          <h2 class="name">Coco</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/cars3.jpeg" class="card-img" alt="Imagen de Cars 3">
-        <div class="card-body">
-          <h2 class="name">Cars 3</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/inc2.jpeg" class="card-img" alt="Imagen de Los Increíbles 2">
-        <div class="card-body">
-          <h2 class="name">Los Increíbles 2</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/toy4.jpeg" class="card-img" alt="Imagen de Toy Story 4">
-        <div class="card-body">
-          <h2 class="name">Toy Story 4</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/on.jpeg" class="card-img" alt="Imagen de Onward">
-        <div class="card-body">
-          <h2 class="name">Onward</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/soul.jpg" class="card-img" alt="Imagen de Soul">
-        <div class="card-body">
-          <h2 class="name">Soul</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/luca.jpg" class="card-img" alt="Imagen de Luca">
-        <div class="card-body">
-          <h2 class="name">Luca</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/pixar/light.jpeg" class="card-img" alt="Imagen de Lightyear">
-        <div class="card-body">
-          <h2 class="name">Lightyear</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/pixar/red.jpeg" class="card-img" alt="Imagen de Red">
-        <div class="card-body">
-           <h2 class="name">Red</h2>
-           <button class="watchlist-btn">Ver</button>
-        </div>
-       </div>
-       <div class="card">
-        <img src="img/pixar/ele.jpeg" class="card-img" alt="Imagen de Elemental">
-        <div class="card-body">
-           <h2 class="name">Elemental</h2>
-           <button class="watchlist-btn">Ver</button>
-        </div>
-       </div>       
-    </div>
   </main>
 
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h6>Sobre Nosotros</h6>
-                <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales peliculas</p>
-            </div>
-
-            <div class="col-xs-6 col-md-3">
-                <h6>Categorias</h6>
-                <ul class="footer-links">
-                    <li><a href="disney.html">Disney</a></li>
-                    <li><a href="marvel.html">Marvel</a></li>
-                    <li><a href="pixar">Pixar</a></li>
-                    <li><a href="sw.html">Star Wars</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <h6>Enlaces Rápidos</h6>
-                <ul class="footer-links">
-                    <li><a href="contactus.html">Contactanos</a></li>
-                    <li><a href="politicprivacy.html">Politica de Privacidad</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Sobre Nosotros</h6>
+          <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales peliculas</p>
         </div>
-        <hr>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li><a href="disney.html">Disney</a></li>
+            <li><a href="marvel.html">Marvel</a></li>
+            <li><a href="pixar">Pixar</a></li>
+            <li><a href="sw.html">Star Wars</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Enlaces Rápidos</h6>
+          <ul class="footer-links">
+            <li><a href="contactus.html">Contactanos</a></li>
+            <li><a href="politicprivacy.html">Politica de Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
-                    <a href="#">MLGweb</a>.
-                </p>
-            </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+            <a href="#">MLGweb</a>.
+          </p>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
 
 </body>
