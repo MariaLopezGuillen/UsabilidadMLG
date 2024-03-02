@@ -68,197 +68,833 @@
   <div class="movies-list">
 
     <div class="card-container">
+      <!-- La Dama y el Vagabundo -->
       <div class="card">
-        <img src="img/disney/dama.jpg" class="card-img" alt="">
+        <img src="img/disney/dama.jpg" class="card-img" alt="Imagen de La Dama y el Vagabundo">
         <div class="card-body">
           <h2 class="name">La Dama y el Vagabundo</h2>
-          </h6>
-          <button href="#dama" class="watchlist-btn">Ver</button>
+          <button class="watchlist-btn" type="button" onclick="openModal('dama', 'close-xl');"
+            aria-label="Ver La Dama y el Vagabundo">Ver</button>
         </div>
       </div>
-      <!-- Modal -->
+
+      <!-- Modal para La Dama y el Vagabundo -->
+      <div class="modal" id="dama" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">LA DAMA Y EL VAGABUNDO</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "La Dama y el Vagabundo" es una encantadora película animada de Disney que narra la historia de Reina, una
+              cocker spaniel doméstica, y Golfo, un perro callejero astuto. Sus vidas se entrelazan en una inesperada
+              historia de amor y aventuras. La romántica escena de la cena con espaguetis, donde comparten un beso, se
+              ha
+              convertido en un icónico momento cinematográfico. La película destaca la superación de las diferencias
+              sociales y celebra la idea de que el amor puede surgir en cualquier lugar. Desde su lanzamiento en 1955,
+              la película ha cautivado a audiencias de todas las edades con su encanto atemporal.
+            </p>
+          </div>
+        </div>
+      </div>
       <!--  -->
+
+      <!-- Bolt -->
       <div class="card">
-        <img src="img/disney/bolt.jpg" class="card-img" alt="">
+        <img src="img/disney/bolt.jpg" class="card-img" alt="Imagen de Bolt">
         <div class="card-body">
           <h2 class="name">Bolt</h2>
-          <button class="watchlist-btn">Ver</button>
-          <!-- Modal-->
+          <button class="watchlist-btn" type="button" onclick="openModal('bolt', 'close-xl');"
+            aria-label="Ver Bolt">Ver</button>
+        </div>
+      </div>
 
-          <!--  -->
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/dame.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">El Jorobado de Notre Dame</h2>
-          </h6>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-
-      </div>
-      <div class="card">
-        <img src="img/disney/enredaos.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Enredados</h2>
-          </h6>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/frozen.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Frozen</h2>
-          <button type="button" data-toggle="modal" data-target="#myModal" class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/oso.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Hermanos Oso</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/inside.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Inside Out</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/king.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">El Rey León</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/raton.jpg" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Los Rescatadores</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/chicken.jfif" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Chicken Little</h2>
-          <button class="watchlist-btn">Ver</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="img/disney/zafa.jfif" class="card-img" alt="">
-        <div class="card-body">
-          <h2 class="name">Zafarrancho en el Rancho</h2>
-          <button class="watchlist-btn">Ver</button>
+      <!-- Modal para Bolt -->
+      <div class="modal" id="bolt" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">BOLT</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Bolt" sigue la historia de un perro actor llamado Bolt que cree que posee superpoderes reales debido
+              a los efectos especiales de su programa de televisión. Separado accidentalmente de su dueña Penny,
+              Bolt se embarca en una aventura para reunirse con ella, acompañado por Mittens, una gata callejera, y
+              Rhino, un hámster fanático del programa. A medida que descubre la realidad fuera del set, Bolt aprende
+              a enfrentar los desafíos del mundo real y a apreciar las relaciones genuinas. La película combina
+              comedia, acción y emociones, ofreciendo una historia entrañable sobre la verdadera amistad y la
+              autenticidad. Desde su lanzamiento en 2008, "Bolt" ha cautivado a audiencias con su encanto y mensajes
+              positivos.
+            </p>
+          </div>
         </div>
       </div>
       <!--  -->
+
+      <!--  -->
+      <!-- El Jorobado de Notre Dame -->
       <div class="card">
-        <img src="img/disney/oliver.jpg" class="card-img" alt="">
+        <img src="img/disney/dame.jpg" class="card-img" alt="Imagen de El Jorobado de Notre Dame">
         <div class="card-body">
-          <h2 class="name">Oliver y su Pandilla</h2>
-          <button class="watchlist-btn">Ver</button>
+          <h2 class="name">El Jorobado de Notre Dame</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('joro', 'close-xl');"
+            aria-label="Ver El Jorobado de Notre Dame">Ver</button>
         </div>
       </div>
+
+      <!-- Modal para El Jorobado de Notre Dame -->
+      <div class="modal" id="joro" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">EL JOROBADO DE NOTRE DAME</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "El Jorobado de Notre Dame" es una película animada de Disney lanzada en 1996, basada en la novela de
+              Victor Hugo, "Nuestra Señora de París". La historia se centra en Quasimodo, un joven jorobado que vive
+              en la catedral de Notre Dame y es cuidado por el juez Claude Frollo. Quasimodo se enamora de Esmeralda,
+              una gitana, y se ve envuelto en conflictos que involucran a Frollo, quien persigue a Esmeralda debido a
+              sus prejuicios hacia los gitanos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Enredados -->
+      <div class="card">
+        <img src="img/disney/enredaos.jpg" class="card-img" alt="Imagen de Enredados">
+        <div class="card-body">
+          <h2 class="name">Enredados</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('enre', 'close-xl');"
+            aria-label="Ver Enredados">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Enredados -->
+      <div class="modal" id="enre" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">ENREDADOS</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Enredados" es una película animada de Disney lanzada en 2010, basada en el cuento de hadas "Rapunzel" de
+              los Hermanos Grimm. La historia sigue a Rapunzel, una joven princesa con un largo cabello mágico que ha
+              sido encerrada en una torre por la malvada bruja Gothel desde que era una niña. Cuando un ladrón llamado
+              Flynn Rider busca refugio en la torre, Rapunzel lo convence para que la ayude a escapar y explorar el
+              mundo exterior.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!--  -->
+      <!-- Frozen -->
+      <div class="card">
+        <img src="img/disney/frozen.jpg" class="card-img" alt="Imagen de Frozen">
+        <div class="card-body">
+          <h2 class="name">Frozen</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('fro', 'close-xl');"
+            aria-label="Ver Frozen">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Frozen -->
+      <div class="modal" id="fro" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">FROZEN</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Frozen" es una película animada de Disney lanzada en 2013. La historia se centra en dos hermanas, Elsa y
+              Anna, que viven en el reino de Arendelle. Elsa tiene el poder de controlar el hielo y la nieve, pero
+              después de un incidente durante su coronación, se retira a las montañas, dejando al reino en un invierno
+              perpetuo. Anna, junto con Kristoff, un montañés, su reno Sven y el muñeco de nieve Olaf, se embarcan en
+              una aventura para encontrar a Elsa y revertir el hechizo.
+
+              "Frozen" es conocida por su empoderamiento femenino, la poderosa canción "Let It Go" y su mensaje sobre el
+              amor verdadero. La película ha sido un gran éxito comercial y ha ganado varios premios, incluido el premio
+              a la Mejor Película Animada en los Premios de la Academia. Su impacto cultural ha llevado a la creación de
+              una secuela, "Frozen II", lanzada en 2019.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Hermano Oso -->
+      <div class="card">
+        <img src="img/disney/oso.jpg" class="card-img" alt="Imagen de Hermano Oso">
+        <div class="card-body">
+          <h2 class="name">Hermano Oso</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('oso', 'close-xl');"
+            aria-label="Ver Hermano Oso">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Hermano Oso -->
+      <div class="modal" id="oso" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">HERMANO OSO</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Hermano Oso" es una película animada de Disney lanzada en 2003, que sigue la historia de Kenai, un joven
+              que es transformado en oso como castigo por matar a un oso. En su viaje para regresar a su forma humana,
+              Kenai entabla una amistad con Koda, un osezno huérfano. A lo largo de su viaje, Kenai aprende valiosas
+              lecciones sobre la hermandad, la conexión con la naturaleza y el perdón. La película celebra la diversidad
+              y la importancia de aceptar las diferencias, mientras Kenai y Koda enfrentan desafíos juntos en un mundo
+              lleno de maravillas y peligros.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!--  -->
+      <!-- Frozen -->
+      <div class="card">
+        <img src="img/disney/frozen.jpg" class="card-img" alt="Imagen de Frozen">
+        <div class="card-body">
+          <h2 class="name">Frozen</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('fro', 'close-frozen');"
+            aria-label="Ver Frozen">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Frozen -->
+      <div class="modal" id="fro" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-frozen" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">FROZEN</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Frozen" es una película animada de Disney lanzada en 2013. La historia se centra en dos hermanas, Elsa y
+              Anna, que viven en el reino de Arendelle. Elsa tiene el poder de controlar el hielo y la nieve, pero
+              después de un incidente durante su coronación, se retira a las montañas, dejando al reino en un invierno
+              perpetuo. Anna, junto con Kristoff, un montañés, su reno Sven y el muñeco de nieve Olaf, se embarcan en
+              una aventura para encontrar a Elsa y revertir el hechizo.
+
+              "Frozen" es conocida por su empoderamiento femenino, la poderosa canción "Let It Go" y su mensaje sobre el
+              amor verdadero. La película ha sido un gran éxito comercial y ha ganado varios premios, incluido el premio
+              a la Mejor Película Animada en los Premios de la Academia. Su impacto cultural ha llevado a la creación de
+              una secuela, "Frozen II", lanzada en 2019.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Inside Out -->
+      <div class="card">
+        <img src="img/disney/inside.jpg" class="card-img" alt="Imagen de Inside Out">
+        <div class="card-body">
+          <h2 class="name">Inside Out</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('in', 'close-inside');"
+            aria-label="Ver Inside Out">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Inside Out -->
+      <div class="modal" id="in" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-inside" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">INSIDE OUT</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Inside Out" (Del revés en español) es una película animada de Pixar lanzada en 2015. La historia se
+              desarrolla dentro de la mente de una niña llamada Riley y sigue a cinco emociones: Alegría, Tristeza,
+              Miedo, Ira y Asco, que trabajan juntas en el Cuartel General para guiar sus decisiones y emociones. Cuando
+              la familia de Riley se muda a una nueva ciudad, las emociones enfrentan desafíos mientras intentan
+              adaptarse a su nueva vida.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <!-- El Rey León -->
+      <div class="card">
+        <img src="img/disney/king.jpg" class="card-img" alt="Imagen de El Rey León">
+        <div class="card-body">
+          <h2 class="name">El Rey León</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('rey', 'close-king');"
+            aria-label="Ver El Rey León">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para El Rey León -->
+      <div class="modal" id="rey" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-king" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">EL REY LEÓN</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "El Rey León" es una película animada de Disney lanzada en 1994 y se ha convertido en un clásico
+              atemporal.
+              La historia se desarrolla en la Sabana africana y sigue la vida de Simba, un león joven destinado a ser el
+              heredero del trono. Sin embargo, después de la muerte de su padre Mufasa a manos de su tío Scar, Simba se
+              ve
+              forzado a huir y vive una vida lejos de su hogar.
+
+              La película explora temas de responsabilidad, identidad y el ciclo de la vida a medida que Simba enfrenta
+              su
+              pasado y busca su lugar en el reino. Con una impactante banda sonora, escenas inolvidables y animación
+              excepcional, "El Rey León" ha dejado una marca indeleble en la cultura popular y ha emocionado a
+              audiencias de
+              todas las edades durante décadas. La película ha sido tan exitosa que ha dado lugar a secuelas,
+              adaptaciones
+              teatrales y un remake de acción real lanzado en 2019.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Los Rescatadores -->
+      <div class="card">
+        <img src="img/disney/raton.jpg" class="card-img" alt="Imagen de Los Rescatadores">
+        <div class="card-body">
+          <h2 class="name">Los Rescatadores</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('rat', 'close-rescatadores');"
+            aria-label="Ver Los Rescatadores">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Los Rescatadores -->
+      <div class="modal" id="rat" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-rescatadores" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">LOS RESCATADORES</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Los Rescatadores" sigue a Bernard y Bianca, dos ratones miembros de la Sociedad Internacional de Rescate,
+              en una misión para salvar a la huérfana Penny de las garras de la malvada Madame Medusa. La historia
+              destaca la valentía, la solidaridad y la superación de los miedos. Con momentos emotivos y personajes
+              entrañables, la película, lanzada en 1977, ha dejado una marca duradera en la animación clásica de Disney.
+              Su éxito llevó a una secuela titulada "Los Rescatadores en Cangurolandia" en 1990.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chicken Little -->
+      <div class="card">
+        <img src="img/disney/chicken.jfif" class="card-img" alt="Imagen de Chicken Little">
+        <div class="card-body">
+          <h2 class="name">Chicken Little</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('chick', 'close-chicken');"
+            aria-label="Ver Chicken Little">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Chicken Little -->
+      <div class="modal" id="chick" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-chicken" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">CHICKEN LITTLE</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Chicken Little" sigue la historia de un joven pollito que se convierte en objeto de burla cuando anuncia
+              que el cielo
+              se está cayendo. A pesar de sus esfuerzos por redimirse, su reputación sigue siendo cuestionada. Cuando
+              descubre
+              evidencia de una invasión alienígena, Chicken Little lidera la defensa de su ciudad para demostrar su
+              valía y salvar
+              el día. La película aborda temas de autoaceptación y la importancia de la familia mientras ofrece una
+              mezcla de humor
+              y aventuras. Lanzada en 2005, "Chicken Little" es conocida por su mensaje positivo y su enfoque
+              entretenido.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Zafarrancho en el Rancho -->
+      <div class="card">
+        <img src="img/disney/zafa.jfif" class="card-img" alt="Imagen de Zafarrancho en el Rancho">
+        <div class="card-body">
+          <h2 class="name">Zafarrancho en el Rancho</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('zafa', 'close-zafarrancho');"
+            aria-label="Ver Zafarrancho en el Rancho">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Zafarrancho en el Rancho -->
+      <div class="modal" id="zafa" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-zafarrancho" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">ZAFARRANCHO EN EL RANCHO</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Zafarrancho en el Rancho" es una película animada de Disney lanzada en 2004. La historia se desarrolla en
+              el Lejano
+              Oeste y sigue a una vaca llamada Maggie que intenta salvar la granja de su dueño, Pearl, de ser embargada.
+              Para
+              lograrlo, Maggie recluta a un grupo variopinto de animales, incluidos tres vacas cantantes llamadas las
+              Hermanas
+              Diamante, para enfrentarse al villano Alameda Slim, un forajido especializado en robar ganado.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Oliver y su Pandilla -->
+      <div class="card">
+        <img src="img/disney/oliver.jpg" class="card-img" alt="Imagen de Oliver y su Pandilla">
+        <div class="card-body">
+          <h2 class="name">Oliver y su Pandilla</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('oliver', 'close-oliver');"
+            aria-label="Ver Oliver y su Pandilla">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal para Oliver y su Pandilla -->
+      <div class="modal" id="oliver" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-oliver" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">OLIVER Y SU PANDILLA</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Oliver y su Pandilla" es una película animada de Disney lanzada en 1988, basada en la novela "Oliver
+              Twist" de Charles Dickens. La historia sigue a Oliver, un gatito callejero, que se une a una pandilla de
+              perros liderada por Dodger y su propietario, Fagin. Juntos, enfrentan desafíos mientras intentan
+              sobrevivir en las calles de Nueva York y evitar al despiadado villano Sykes. Oliver encuentra un hogar con
+              Jenny, una niña adinerada, pero pronto se ve amenazado por Sykes, quien planea secuestrarlo por rescate.
+              La película destaca temas de amistad, lealtad y la búsqueda de un hogar, con una emocionante trama y
+              canciones memorables.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
       <!-- Series -->
     </div>
   </div>
   <h1 class="title">SERIES</h1>
   <div class="card-container">
+    <!-- Las Aventuras de Rapunzel -->
     <div class="card">
-      <img src="img/disney/adventures.jpg" class="card-img" alt="">
+      <img src="img/disney/adventures.jpg" class="card-img" alt="Imagen de Las Aventuras de Rapunzel">
       <div class="card-body">
         <h2 class="name">Las Aventuras de Rapunzel</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('rapunzel', 'close-rapunzel');"
+          aria-label="Ver Las Aventuras de Rapunzel">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para Las Aventuras de Rapunzel -->
+    <div class="modal" id="rapunzel" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-rapunzel" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">LAS AVENTURAS DE RAPUNZEL</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Las Aventuras de Rapunzel" se refieren a la serie de televisión animada llamada "Enredados: La Serie". La
+            historia sigue a Rapunzel mientras explora su vida como princesa de Corona. Acompañada por su valiente amigo
+            Eugene, la fiel camaleón Pascal y Maximus el caballo, Rapunzel se aventura más allá de las paredes del reino
+            para descubrir nuevos misterios y enfrentarse a desafíos. La serie expande el universo de "Enredados",
+            explorando la relación de Rapunzel con su familia y amigos, al tiempo que enfrenta amenazas que ponen a
+            prueba su coraje y determinación. "Las Aventuras de Rapunzel" presenta emocionantes episodios llenos de
+            diversión y acción, añadiendo capítulos emocionantes a la historia de la princesa de la torre.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Austin y Ally -->
     <div class="card">
-      <img src="img/disney/ally.png" class="card-img" alt="">
+      <img src="img/disney/ally.png" class="card-img" alt="Imagen de Austin y Ally">
       <div class="card-body">
         <h2 class="name">Austin y Ally</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('austin', 'close-austin');"
+          aria-label="Ver Austin y Ally">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para Austin y Ally -->
+    <div class="modal" id="austin" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-austin" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">AUSTIN Y ALLY</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Austin y Ally" es una serie de televisión de Disney Channel que se emitió desde 2011 hasta 2016. La
+            historia sigue a Austin Moon, un talentoso cantante y compositor, y Ally Dawson, una talentosa compositora
+            con miedo escénico. Juntos, forman una colaboración musical única y se embarcan en emocionantes aventuras en
+            la industria de la música de Miami. A lo largo de la serie, Austin y Ally enfrentan desafíos, cultivan su
+            amistad y desarrollan sus carreras musicales, todo mientras cuentan con el apoyo de sus amigos Dez y Trish.
+            La serie es conocida por su combinación de música pegajosa, humor y mensajes positivos sobre la amistad y la
+            perseverancia.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Art Attack -->
     <div class="card">
-      <img src="img/disney/art.jpg" class="card-img" alt="">
+      <img src="img/disney/art.jpg" class="card-img" alt="Imagen de Art Attack">
       <div class="card-body">
         <h2 class="name">Art Attack</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('art', 'close-art');"
+          aria-label="Ver Art Attack">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para Art Attack -->
+    <div class="modal" id="art" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-art" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">ART ATTACK</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Art Attack" es un popular programa de televisión británico que se emitió por primera vez en 1990, creado
+            por Neil Buchanan. El programa presentaba proyectos artísticos y manualidades creativas utilizando
+            materiales comunes y accesibles. Buchanan compartía consejos y técnicas mientras realizaba proyectos
+            visualmente llamativos. "Art Attack" se convirtió en un fenómeno global, inspirando a niños a explorar su
+            creatividad a través de expresiones artísticas. Su enfoque educativo y entretenido dejó una marca duradera
+            en la cultura infantil.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Big Hero 6: The Series -->
     <div class="card">
-      <img src="img/disney/bighero6.jpg" class="card-img" alt="">
+      <img src="img/disney/bighero6.jpg" class="card-img" alt="Imagen de Big Hero 6: The Series">
       <div class="card-body">
         <h2 class="name">Big Hero 6: The Series</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('bighero6', 'close-bighero6');"
+          aria-label="Ver Big Hero 6: The Series">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para Big Hero 6: The Series -->
+    <div class="modal" id="bighero6" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-bighero6" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">BIG HERO 6: THE SERIES</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Big Hero 6: The Series" continúa la historia de la película homónima de Disney. Siguiendo las aventuras de
+            Hiro, Baymax y sus amigos en San Fransokyo, la serie explora el crecimiento personal y las relaciones de los
+            personajes. Con una mezcla de acción, comedia y ciencia ficción, aborda temas como la amistad y la
+            superación de desafíos. Desde su estreno en 2017, la serie ha ganado popularidad por expandir el universo de
+            la película original y cautivar a fans de todas las edades.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- La Casa Buhos -->
     <div class="card">
-      <img src="img/disney/buho.jpg" class="card-img" alt="">
+      <img src="img/disney/buho.jpg" class="card-img" alt="Imagen de La Casa Buhos">
       <div class="card-body">
         <h2 class="name">La Casa Buhos</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('cas', 'close-cas');"
+          aria-label="Ver La Casa Buhos">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para La Casa Buhos -->
+    <div class="modal" id="cas" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-cas" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">LA CASA BUHOS</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            Luz encontró un día un portal a un mundo mágico, y en él, Casa búho, el hogar de la mejor bruja del
+            universo. También conoció a King, el rey de los demonios, y a muchos otros monstruos. Ahora, Casa búho se ha
+            convertido en su hogar, y desde allí Luz trabaja para convertirse ella también en hechicera.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Gravity Falls -->
     <div class="card">
-      <img src="img/disney/falls.jpg" class="card-img" alt="">
+      <img src="img/disney/falls.jpg" class="card-img" alt="Imagen de Gravity Falls">
       <div class="card-body">
         <h2 class="name">Gravity Falls</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('grav', 'close-grav');"
+          aria-label="Ver Gravity Falls">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para Gravity Falls -->
+    <div class="modal" id="grav" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-grav" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">GRAVITY FALLS</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Gravity Falls" sigue las aventuras de los gemelos Mabel y Dipper Pines mientras exploran los misterios
+            sobrenaturales de Gravity Falls durante su verano con su tío abuelo Stan. Armado con un diario secreto,
+            Dipper desentraña criaturas extrañas y eventos misteriosos en este pueblo peculiar. La serie, creada por
+            Alex Hirsch, mezcla humor, elementos de ciencia ficción y fantasía, y desarrolla una trama intrigante que
+            cautiva a audiencias de todas las edades. A lo largo de dos temporadas, "Gravity Falls" se ganó elogios por
+            su narrativa ingeniosa, personajes carismáticos y referencias inteligentes, convirtiéndose en una favorita
+            entre los fanáticos de la animación.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
     <div class="card">
-      <img src="img/disney/desc.jpg" class="card-img" alt="">
+      <img src="img/disney/desc.jpg" class="card-img" alt="Imagen de Los Descendientes">
       <div class="card-body">
-        <h2 class="name">Los Descendientes </h2>
-        <button class="watchlist-btn">Ver</button>
+        <h2 class="name">Los Descendientes</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('desc', 'close-desc');"
+          aria-label="Ver Los Descendientes">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para Los Descendientes -->
+    <div class="modal" id="desc" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-desc" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">LOS DESCENDIENTES</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Los Descendientes" es una franquicia de películas originales de Disney Channel que se centra en los hijos
+            adolescentes de los villanos icónicos de Disney. La primera película, estrenada en 2015, sigue a Mal, hija
+            de Maléfica, y a otros tres hijos de villanos mientras intentan adaptarse a la vida en la preparatoria de
+            Auradon, el reino de los héroes, como parte de un programa de integración. La secuela, "Los Descendientes
+            2", profundiza en las aventuras de los personajes en Auradon y en la isla de los perdidos. "Los
+            Descendientes 3" completa la trilogía con la introducción de nuevos personajes y la resolución de las tramas
+            pendientes. La franquicia incluye música original y ha sido un éxito entre el público joven desde su
+            lanzamiento.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <div class="card">
-      <img src="img/disney/jess.jpg" class="card-img" alt="">
+      <img src="img/disney/jess.jpg" class="card-img" alt="Imagen de Jessie">
       <div class="card-body">
         <h2 class="name">Jessie</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('jess', 'close-jess');"
+          aria-label="Ver Jessie">Ver</button>
       </div>
     </div>
+
+    <!-- Modal para Jessie -->
+    <div class="modal" id="jess" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-jess" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">JESSIE</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Jessie" sigue las divertidas y conmovedoras experiencias de Jessie Prescott, una joven aspirante a actriz
+            de Texas, mientras trabaja como niñera para los cuatro extravagantes niños Ross en Nueva York. La serie,
+            emitida de 2011 a 2015 en Disney Channel, combina humor, situaciones cómicas y momentos emotivos, explorando
+            temas de familia, amistad y crecimiento personal. Con un elenco diverso de personajes y una mezcla
+            equilibrada de comedia y mensajes positivos, "Jessie" ha sido bien recibida por el público juvenil y es
+            recordada como una serie entrañable de Disney.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Mickey Mouse Card -->
     <div class="card">
-      <img src="img/disney/mickey.jpg" class="card-img" alt="">
+      <img src="img/disney/mickey.jpg" class="card-img" alt="Mickey Mouse">
       <div class="card-body">
-        <h2 class="name">Mickey Mpuse</h2>
-        <button class="watchlist-btn">Ver</button>
+        <h2 class="name">Mickey Mouse</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('mick', 'close-xl');"
+          aria-label="Ver detalles de Mickey Mouse">Ver</button>
       </div>
     </div>
+
+    <!-- Mickey Mouse Modal -->
+    <div class="modal" id="mick" aria-hidden="true" aria-modal="true" role="dialog">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <button id="close-oliver" aria-label="Cerrar modal" type="button">
+            <i class="fa fa-times">X</i>
+          </button>
+          <h3 id="modal-title-dead">Mickey Mouse</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Mickey Mouse" es el icónico personaje animado creado por Walt Disney y Ub Iwerks en 1928. Debutó en
+            "Steamboat Willie" y se ha convertido en el símbolo distintivo de Disney. Con sus grandes orejas, guantes
+            blancos y pantalones rojos, Mickey ha protagonizado numerosas películas y programas de televisión. Junto con
+            Minnie Mouse y otros personajes clásicos, ha entretenido a audiencias de todas las edades, dejando un
+            impacto duradero en la cultura popular. La figura de Mickey representa la magia y la diversión asociadas con
+            Disney.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Los Padrinos Mágicos Card -->
     <div class="card">
-      <img src="img/disney/padrinos.jpg" class="card-img" alt="">
+      <img src="img/disney/padrinos.jpg" class="card-img" alt="Los Padrinos Mágicos">
       <div class="card-body">
         <h2 class="name">Los Padrinos Mágicos</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('mag', 'close-xl');"
+          aria-label="Ver detalles de Los Padrinos Mágicos">Ver</button>
       </div>
     </div>
+
+    <!-- Los Padrinos Mágicos Modal -->
+    <div class="modal" id="mag" aria-hidden="true" aria-modal="true" role="dialog">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <button id="close-oliver" aria-label="Cerrar modal" type="button">
+            <i class="fa fa-times">X</i>
+          </button>
+          <h3 id="modal-title-dead">Los Padrinos Mágicos</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Los Padrinos Mágicos" sigue las hilarantes aventuras de Timmy Turner, un niño de 10 años con dos padrinos
+            mágicos, Cosmo y Wanda. Emitida desde 2001 hasta 2017, la serie de Nickelodeon combina humor, elementos
+            mágicos y desastres cómicos mientras Timmy utiliza sus deseos para enfrentar los desafíos de la infancia. La
+            relación entre Timmy y sus peculiares padrinos, junto con villanos como Denzel Crocker y Vicky, ha dejado
+            una marca duradera en la cultura pop infantil. La serie es conocida por su ingeniosa narrativa y su
+            capacidad para atraer tanto a niños como a adultos, convirtiéndose en un clásico de la animación.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="card">
       <img src="img/disney/musica.jpg" class=" card-img" alt="">
       <div class="card-body">
         <h2 class="name">High School Musical
         </h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('mus', 'close-xl');"
+          aria-label="Ver ">Ver</button>
       </div>
     </div>
+    <!--  -->
+    <div class="modal" id="mus" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-oliver" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">HIGH SCHOOL MUSICAL</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "High School Musical" es una exitosa franquicia de Disney que comenzó en 2006. La primera película sigue a
+            Troy Bolton y Gabriella Montez, quienes desafían las expectativas sociales al unirse al musical de su
+            escuela secundaria. La franquicia incluye secuelas y una serie de Disney+. Con su música pegajosa,
+            coreografías emocionantes y mensajes positivos sobre la amistad y la aceptación, "High School Musical" se
+            convirtió en un fenómeno cultural que ha dejado una marca duradera en la cultura pop y en las generaciones
+            más jóvenes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <div class="card">
       <img src="img/disney/phineas.jpg" class="card-img" alt="">
       <div class="card-body">
         <h2 class="name">Phineas and Ferb</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('ph', 'close-xl');"
+          aria-label="Ver ">Ver</button>
       </div>
     </div>
+    <!--  -->
+    <div class="modal" id="ph" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-oliver" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">PHINEAS AND FERB</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Phineas and Ferb" es una serie animada de Disney Channel que se emitió de 2007 a 2015. La trama sigue las
+            ingeniosas y veraniegas aventuras de los hermanastros Phineas y Ferb mientras crean proyectos
+            extraordinarios. Su hermana Candace intenta exponer sus actividades, mientras que su mascota, Perry el
+            Ornitorrinco, lleva una doble vida como agente secreto. La serie es conocida por su humor inteligente,
+            personajes entrañables y canciones pegajosas. "Phineas and Ferb" ha dejado una marca duradera en la cultura
+            pop y ha sido elogiada por su originalidad y atractivo intergeneracional.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <div class="card">
       <img src="img/disney/pato.jpg" class="card-img" alt="">
       <div class="card-body">
         <h2 class="name">Patoaventuras</h2>
-        <button class="watchlist-btn">Ver</button>
+        <button class="watchlist-btn" type="button" onclick="openModal('mag', 'close-xl');"
+          aria-label="Ver ">Ver</button>
       </div>
     </div>
+    <!--  -->
+    <div class="modal" id="mag" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-oliver" aria-label="Cerrar modal" role="button"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">PHINEAS AND FERB</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Phineas and Ferb" es una serie animada de Disney Channel que se emitió de 2007 a 2015. La trama sigue las
+            ingeniosas y veraniegas aventuras de los hermanastros Phineas y Ferb mientras crean proyectos
+            extraordinarios. Su hermana Candace intenta exponer sus actividades, mientras que su mascota, Perry el
+            Ornitorrinco, lleva una doble vida como agente secreto. La serie es conocida por su humor inteligente,
+            personajes entrañables y canciones pegajosas. "Phineas and Ferb" ha dejado una marca duradera en la cultura
+            pop y ha sido elogiada por su originalidad y atractivo intergeneracional.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
   </div>
   <!-- Site footer -->
   <footer class="site-footer">
