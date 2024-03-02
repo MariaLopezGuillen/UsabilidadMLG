@@ -9,9 +9,11 @@
 
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css/marvel.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="shortcut icon" href="img/logodisney.png" type="image/x-icon">
   <script src="js/style.js"></script>
-  <script src="js/marvel.js"></script>
+
+  <script src="js/modal.js"></script>
   <title>WikiDisney +</title>
 </head>
 
@@ -52,319 +54,855 @@
     </nav>
   </header>
   <!-- Marvel -->
-  <main>
-    <div class="carousel-container">
-      <div class="carousel">
-        <div class="slider">
-          <div class="slide-content">
-            <h1 class="movie-title">loki</h1>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="slider">
+        <div class="slide-content">
+          <h1 class="movie-title">Pixar</h1>
+        </div>
+        <img src="img/pixar/pixar.png" alt="Header Pixar">
+      </div>
+    </div>
+  </div>
+
+  <!-- primer carrusel -->
+  <h1 class="title">RECOMENDADO PARA TI</h1>
+  <div class="movies-list">
+
+    <div class="card-container">
+      <!-- Película: Toy Story -->
+      <div class="card">
+        <img src="img/pixar/toy.jfif" class="card-img" alt="Toy Story">
+        <div class="card-body">
+          <h2 class="name">Toy Story</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('toy', 'close-xl');"
+            aria-label="Ver Toy Story">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal: Toy Story -->
+      <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">TOY STORY</h3>
           </div>
-          <img src="img/marvel/headerloki.png" alt="Loki">
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Toy Story" es una película animada que sigue la vida de juguetes que cobran vida cuando los humanos no
+              están presentes. Woody, el vaquero favorito de Andy, se ve amenazado por la llegada de Buzz Lightyear, un
+              juguete espacial. Juntos, deben superar rivalidades y aventuras para regresar a casa antes de que Andy y
+              su familia se muden. La película celebra la amistad y la importancia de aceptar el cambio mientras los
+              juguetes descubren su verdadero propósito.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Película: Bichos: Una aventura en miniatura -->
+      <div class="card">
+        <img src="img/pixar/bicho.jfif" class="card-img" alt="Bichos: Una aventura en miniatura">
+        <div class="card-body">
+          <h2 class="name">Bichos: Una aventura en miniatura</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('bicho', 'close-xl');"
+            aria-label="Ver Bichos: Una aventura en miniatura">Ver</button>
+        </div>
+      </div>
+
+      <!-- Modal: Bichos: Una aventura en miniatura -->
+      <div class="modal" id="bicho" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">BICHOS: UNA AVENTURA EN MINIATURA</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Bichos: Una Aventura en Miniatura" es una película animada que sigue a Flik, una hormiga inventor, en su
+              esfuerzo por salvar su colonia de una banda de saltamontes intimidantes. Para lograrlo, Flik recluta a un
+              grupo de insectos marginados y juntos enfrentan desafíos emocionantes. La historia resalta la valentía, la
+              diversidad y la importancia del trabajo en equipo, ofreciendo una encantadora perspectiva del mundo en
+              miniatura de los insectos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toy Story 2 -->
+      <div class="card">
+        <img src="img/pixar/toy2.jfif" class="card-img" alt="Imagen de Toy Story 2">
+        <div class="card-body">
+          <h2 class="name">Toy Story 2</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('toy2', 'close-xl');"
+            aria-label="Ver Toy Story 2">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Toy Story 2 -->
+      <div class="modal" id="toy2" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">TOY STORY 2</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Toy Story 2" continúa la historia de los juguetes de Andy cuando Woody es secuestrado por un
+              coleccionista de juguetes. Buzz Lightyear y el resto de la pandilla se embarcan en una misión para
+              rescatarlo. En el camino, Woody descubre su pasado como estrella de un programa de televisión y se
+              enfrenta a la elección entre regresar a casa con Andy o permanecer en el mundo de la colección. La
+              película explora temas de lealtad, identidad y el valor de la amistad, ofreciendo una emocionante y
+              conmovedora aventura para los personajes queridos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monsters, Inc. -->
+      <div class="card">
+        <img src="img/pixar/mons.jfif" class="card-img" alt="Imagen de Monsters, Inc.">
+        <div class="card-body">
+          <h2 class="name">Monsters, Inc.</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('mons', 'close-xl');"
+            aria-label="Ver Monsters, Inc.">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Monsters, Inc. -->
+      <div class="modal" id="mons" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">MONSTERS, INC.</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Monsters, Inc." es una película animada que se desarrolla en la ciudad de Monstruópolis, donde monstruos
+              asustadores generan energía a partir de los gritos de los niños humanos. La trama sigue a James P.
+              Sullivan (Sulley) y su amigo Mike Wazowski, quienes trabajan en la empresa Monsters, Inc. Un día, una niña
+              humana llamada Boo llega al mundo de los monstruos, desencadenando una serie de eventos cómicos y
+              emotivos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- La primera cita de Raley -->
+      <div class="card">
+        <img src="img/pixar/cita.jpg" class="card-img" alt="Imagen de La primera cita de Raley">
+        <div class="card-body">
+          <h2 class="name">La primera cita de Raley</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('ral', 'close-xl');"
+            aria-label="Ver La primera cita de Raley">Ver</button>
+        </div>
+      </div>
+      <!-- Modal La primera cita de Raley -->
+      <div class="modal" id="ral" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">LA PRIMERA CITA DE RALEY</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              Riley se prepara para su primera cita bajo la atenta mirada de las emociones de sus padres. Cortometraje
+              incluido en los contenidos extra de 'Del revés'.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buscando a Nemo -->
+      <div class="card">
+        <img src="img/pixar/nemo.jfif" class="card-img" alt="Imagen de Buscando a Nemo">
+        <div class="card-body">
+          <h2 class="name">Buscando a Nemo</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('nem', 'close-xl');"
+            aria-label="Ver Buscando a Nemo">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Buscando a Nemo -->
+      <div class="modal" id="nem" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">BUSCANDO A NEMO</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Buscando a Nemo" es una película animada de Pixar que sigue la historia de Marlin, un pez payaso, en su
+              búsqueda desesperada por encontrar a su hijo Nemo, quien ha sido capturado por un buceador y llevado a
+              Sydney. En su viaje, Marlin se une a Dory, un pez cirujano azul con problemas de memoria a corto plazo.
+              Juntos, enfrentan numerosos peligros y encuentran amigos inesperados mientras buscan a Nemo. La película
+              aborda temas de amor, valentía y la importancia del trabajo en equipo, mientras lleva a los espectadores a
+              un viaje submarino emocionante y conmovedor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Cars -->
+      <div class="card">
+        <img src="img/pixar/cars.jfif" class="card-img" alt="Imagen de Cars">
+        <div class="card-body">
+          <h2 class="name">Cars</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('cars', 'close-xl');"
+            aria-label="Ver Cars">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Cars -->
+      <div class="modal" id="cars" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">CARS</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Cars" es una película animada de Pixar que sigue la historia de Rayo McQueen, un automóvil de carreras
+              egocéntrico que termina varado en un pequeño pueblo llamado Radiador Springs mientras se dirigía a la
+              carrera Piston Cup. Durante su estadía forzada, Rayo aprende lecciones valiosas de humildad y amistad. La
+              película destaca la importancia de apreciar las cosas sencillas de la vida y de valorar las relaciones
+              personales sobre el éxito y la fama. A medida que Rayo se conecta con los residentes de Radiador Springs,
+              experimenta un cambio de perspectiva que redefine sus prioridades.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Los Increíbles -->
+      <div class="card">
+        <img src="img/pixar/increibles.jfif" class="card-img" alt="Imagen de Los Increíbles">
+        <div class="card-body">
+          <h2 class="name">Los Increíbles</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('jessi', 'close-xl');"
+            aria-label="Ver Los Increíbles">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Los Increíbles -->
+      <div class="modal" id="inc" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">LOS INCREÍBLES</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Los Increíbles" es una película animada de Pixar que sigue a la familia Parr, una familia de superhéroes
+              retirados que deben salir de su anonimato para enfrentar una nueva amenaza. Cada miembro de la familia
+              tiene habilidades especiales, pero deben aprender a trabajar juntos para superar los desafíos. La película
+              aborda temas de identidad, familia y la importancia de aceptarse a uno mismo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ratatouille -->
+      <div class="card">
+        <img src="img/pixar/rata.jpeg" class="card-img" alt="Imagen de Ratatouille">
+        <div class="card-body">
+          <h2 class="name">Ratatouille</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('rata', 'close-xl');"
+            aria-label="Ver Ratatouille">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Ratatouille -->
+      <div class="modal" id="rata" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">RATATOUILLE</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Ratatouille" es una película de animación de Pixar que narra la historia de Remy, una rata que sueña con
+              convertirse en un chef francés famoso. Remy termina en París y se encuentra cerca del restaurante de su
+              ídolo, Auguste Gusteau. A través de una serie de eventos, Remy se une a Linguini, un joven empleado del
+              restaurante, y juntos forman un equipo para crear platos culinarios excepcionales. La película destaca la
+              importancia de seguir tus sueños, la superación de prejuicios y la idea de que la pasión y el talento
+              pueden provenir de lugares inesperados.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- WALL·E -->
+      <div class="card">
+        <img src="img/pixar/walli.jpg" class="card-img" alt="Imagen de WALL·E">
+        <div class="card-body">
+          <h2 class="name">WALL·E</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('wall', 'close-xl');"
+            aria-label="Ver WALL·E">Ver</button>
+        </div>
+      </div>
+      <!-- Modal WALL·E -->
+      <div class="modal" id="wall" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">WALL·E</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "WALL-E" es una película animada de Pixar que presenta a un pequeño robot compactador de basura llamado
+              WALL-E, quien ha pasado solitario muchos años limpiando la Tierra, ahora desierta y cubierta de desechos
+              humanos. Un día, encuentra una planta y la guarda, lo que desencadena una serie de eventos que lleva a
+              WALL-E a una nave espacial donde conoce a EVE, un robot de exploración. Juntos, emprenden una aventura que
+              cambia el destino de la humanidad y aborda temas como la sostenibilidad, la responsabilidad ambiental y la
+              conexión humana. La película destaca la importancia de cuidar el planeta y explorar la relación entre la
+              tecnología y la humanidad.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brave -->
+      <div class="card">
+        <img src="img/pixar/brave.jpeg" class="card-img" alt="Imagen de Brave">
+        <div class="card-body">
+          <h2 class="name">Brave</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('brave', 'close-xl');"
+            aria-label="Ver Brave">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Brave -->
+      <div class="modal" id="brave" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">BRAVE</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Brave" es una película de animación de Pixar que sigue la historia de Mérida, una valiente princesa
+              escocesa con habilidades excepcionales con el arco y la flecha. Desafiando las tradiciones y expectativas,
+              Mérida se enfrenta a una maldición que amenaza a su reino y a su familia. La película destaca temas de
+              independencia, aceptación y la importancia de la comunicación entre padres e hijos. A través de su
+              valiente viaje, Mérida descubre el valor de ser fiel a sí misma y de comprender las consecuencias de sus
+              acciones. "Brave" ofrece una perspectiva fresca sobre la narrativa de las princesas y celebra la fuerza y
+              determinación de su protagonista.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Up: Una Aventura de Altura -->
+      <div class="card">
+        <img src="img/pixar/up.jfif" class="card-img" alt="Imagen de Up: Una Aventura de Altura">
+        <div class="card-body">
+          <h2 class="name">Up: Una Aventura de Altura</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('up', 'close-xl');"
+            aria-label="Ver Up: Una Aventura de Altura">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Up: Una Aventura de Altura -->
+      <div class="modal" id="up" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">UP: UNA AVENTURA DE ALTURA</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Up: Una Aventura de Altura" es una película animada de Pixar que sigue la historia de Carl Fredricksen,
+              un viudo de edad avanzada, quien decide cumplir el sueño de su difunta esposa de viajar a un lugar mítico
+              en América del Sur llamado "Paraíso de las Cataratas". Carl ata miles de globos a su casa y despega hacia
+              la aventura, sin darse cuenta de que un joven explorador llamado Russell se ha colado en su viaje. La
+              película explora temas de pérdida, aventura y amistad, mientras Carl y Russell enfrentan desafíos y
+              descubren el verdadero significado de la vida en su viaje. "Up" es conocida por su emocionante narrativa y
+              su capacidad para tocar corazones con su historia conmovedora y su imaginativa animación.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!--  -->
+      <!-- Toy Story 3 -->
+      <div class="card">
+        <img src="img/pixar/toy3.jfif" class="card-img" alt="Imagen de Toy Story 3">
+        <div class="card-body">
+          <h2 class="name">Toy Story 3</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('toy3', 'close-xl');"
+            aria-label="Ver Toy Story 3">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Toy Story 3 -->
+      <div class="modal" id="toy3" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">TOY STORY 3</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Toy Story 3" continúa la saga de los juguetes de Andy cuando este se prepara para ir a la universidad.
+              Los juguetes, incluido Woody, Buzz Lightyear y los demás, se enfrentan a la incertidumbre de su futuro
+              mientras intentan encontrar un lugar en la vida de Andy. Sin embargo, accidentalmente terminan en una
+              guardería donde se enfrentan a nuevos desafíos y conocen a nuevos amigos y enemigos. La película explora
+              temas de lealtad, amistad y crecimiento personal mientras los juguetes luchan por encontrar su propósito y
+              enfrentan el dilema de permanecer juntos o seguir adelante. "Toy Story 3" es conocida por su emocionante y
+              emotiva conclusión, que cautivó a audiencias de todas las edades.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cars 2 -->
+      <div class="card">
+        <img src="img/pixar/cars2.jfif" class="card-img" alt="Imagen de Cars 2">
+        <div class="card-body">
+          <h2 class="name">Cars 2</h2>
+          <button class="watchlist-btn" type="button" onclick="openModal('cars2', 'close-xl');"
+            aria-label="Ver Cars 2">Ver</button>
+        </div>
+      </div>
+      <!-- Modal Cars 2 -->
+      <div class="modal" id="cars2" aria-hidden="true" aria-modal="true">
+        <div class="modal-container-xl">
+          <div class="modal-header">
+            <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+            <h3 id="modal-title-dead">CARS 2</h3>
+          </div>
+          <div class="modal-body" aria-labelledby="modal-title-dead">
+            <p>
+              "Cars 2" sigue a Rayo McQueen y Mate en una emocionante carrera internacional mientras se ven envueltos en
+              un caso de espionaje. Rayo compite en el Grand Prix Mundial, pero Mate es confundido con un espía y se
+              embarca en una misión para desmantelar una conspiración. La trama se desarrolla en exóticos lugares
+              alrededor del mundo, presentando nuevos personajes y desafíos. La película combina acción, comedia y
+              mensajes de amistad mientras los personajes luchan contra enemigos internacionales. Aunque diferente a la
+              primera entrega, "Cars 2" ofrece una experiencia animada llena de giros emocionantes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!--  -->
+  <!-- Series -->
+
+
+  <h1 class="title">POPULAR</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="img/pixar/uni.jpeg" class="card-img" alt="Imagen de Monsters University">
+      <div class="card-body">
+        <h2 class="name">Monsters University</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('mu', 'close-xl');"
+          aria-label="Ver ">Ver</button>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="modal" id="mu" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">
+            MONSTERS UNIVERSITY</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>"Monsters University" es una precuela de la exitosa película "Monsters, Inc." que explora los años
+            universitarios de Mike Wazowski y James P. Sullivan (Sulley). La historia sigue a Mike y Sulley mientras
+            asisten a la Universidad de Monstruos y se esfuerzan por convertirse en asustadores profesionales. Ambos
+            personajes, inicialmente rivales, deben unir fuerzas con un grupo de monstruos marginados para competir
+            en los Juegos de Sustos y demostrar su valía. La película aborda temas de amistad, aceptación y
+            perseverancia, ofreciendo una mirada divertida y conmovedora al mundo de los monstruos antes de
+            convertirse en asustadores de renombre.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card">
+      <img src="img/pixar/inside.jpeg" class="card-img" alt="Imagen de Inside Out">
+      <div class="card-body">
+        <h2 class="name">Inside Out</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('in', 'close-xl');"
+          aria-label="Ver ">Ver</button>
+      </div>
+    </div>
+    <!--  -->
+    <div class="modal" id="in" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">
+            INSIDE OUT</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>"Inside Out" es una película animada de Pixar que se desarrolla dentro de la mente de una niña llamada
+            Riley. La historia sigue a cinco emociones antropomórficas (Alegría, Tristeza, Miedo, Ira y Asco) que
+            trabajan en el Cuartel General de Riley para guiar sus decisiones y emociones. Cuando la familia de
+            Riley se muda a una nueva ciudad, las emociones se enfrentan a desafíos inesperados mientras intentan
+            adaptarse a su nueva vida. La película explora temas complejos como la importancia de todas las
+            emociones, el crecimiento emocional y la necesidad de equilibrio en la vida. "Inside Out" recibió
+            elogios por su originalidad, narrativa emocional y enfoque reflexivo sobre la psicología emocional.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- El Viaje de Arlo -->
+    <div class="card">
+      <img src="img/pixar/arlo.jpeg" class="card-img" alt="Imagen de El Viaje de Arlo">
+      <div class="card-body">
+        <h2 class="name">EL VIAJE DE ARLO</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('jessi', 'close-xl');"
+          aria-label="Ver El Viaje de Arlo">Ver</button>
+      </div>
+    </div>
+    <!-- Modal El Viaje de Arlo -->
+    <div class="modal" id="in" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">EL VIAJE DE ARLO</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "El Viaje de Arlo" es una película de animación de Pixar que narra la historia de Arlo, un dinosaurio
+            Apatosaurus joven y temeroso, que se embarca en un viaje épico a través de un paisaje desolado y peligroso.
+            Durante su viaje, Arlo se separa de su familia y conoce a un niño humano llamado Spot, con quien forma un
+            vínculo inquebrantable. Juntos, enfrentan numerosos desafíos y descubren la verdadera fuerza del coraje y la
+            amistad. La película aborda temas de crecimiento personal, superación de miedos y la importancia de
+            encontrar tu lugar en el mundo. "El Viaje de Arlo" es una historia conmovedora y visualmente impresionante
+            que cautiva a espectadores de todas las edades.
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- primer carrusel -->
-    <h1 class="title">RECOMENDADO PARA TI</h1>
-    <div class="movies-list">
-
-      <div class="card-container">
-        <div class="card">
-          <img src="img/pixar/toy.jfif" class="card-img" alt="Toy Story">
-          <div class="card-body">
-            <h2 class="name">Toy Story</h2>
-            </h6>
-            <button class="watchlist-btn" type="button" onclick="openModal('jessi', 'close-xl');"
-              aria-label="Ver Thor">Ver</button>
-
-          </div>
-          <!--  -->
-          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
-            <div class="modal-container-xl">
-              <div class="modal-header">
-                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
-                <h3 id="modal-title-dead">
-                  TOY STORY</h3>
-              </div>
-              <div class="modal-body" aria-labelledby="modal-title-dead">
-                <p>
-                  "Toy Story" es una película animada que sigue la vida de juguetes que cobran vida cuando los humanos
-                  no están presentes. Woody, el vaquero favorito de Andy, se ve amenazado por la llegada de Buzz
-                  Lightyear, un juguete espacial. Juntos, deben superar rivalidades y aventuras para regresar a casa
-                  antes de que Andy y su familia se muden. La película celebra la amistad y la importancia de aceptar el
-                  cambio mientras los juguetes descubren su verdadero propósito.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="card">
-            <img src="img/pixar/bicho.jfif" class="card-img" alt="Imagen Bichos: Una aventura en miniatura">
-            <div class="card-body">
-              <h2 class="name">Bichos: Una aventura en miniatura</h2>
-              <button class="watchlist-btn" type="button" onclick="openModal('jessi', 'close-xl');"
-                aria-label="Ver Thor">Ver</button>
-              <!--  -->
-            </div>
-          </div>
-          <!--  -->
-          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
-            <div class="modal-container-xl">
-              <div class="modal-header">
-                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
-                <h3 id="modal-title-dead">
-                  BICHOS: UNA AVENTURA EN MINIATURA</h3>
-              </div>
-              <div class="modal-body" aria-labelledby="modal-title-dead">
-                <p>
-                  "Bichos: Una Aventura en Miniatura" es una película animada que sigue a Flik, una hormiga inventor, en
-                  su esfuerzo por salvar su colonia de una banda de saltamontes intimidantes. Para lograrlo, Flik
-                  recluta a un grupo de insectos marginados y juntos enfrentan desafíos emocionantes. La historia
-                  resalta la valentía, la diversidad y la importancia del trabajo en equipo, ofreciendo una encantadora
-                  perspectiva del mundo en miniatura de los insectos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="card">
-            <img src="img/pixar/toy2.jfif" class="card-img" alt="Imagen de Toy Story 2">
-            <div class="card-body">
-              <h2 class="name">Toy Story 2</h2>
-              <button class="watchlist-btn" aria-label="Ver Toy Story 2">Ver</button>
-            </div>
-          </div>
-          <!--  -->
-          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
-            <div class="modal-container-xl">
-              <div class="modal-header">
-                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
-                <h3 id="modal-title-dead">
-                  TOY STORY 2</h3>
-              </div>
-              <div class="modal-body" aria-labelledby="modal-title-dead">
-                <p>
-                  "Toy Story 2" continúa la historia de los juguetes de Andy cuando Woody es secuestrado por un
-                  coleccionista de juguetes. Buzz Lightyear y el resto de la pandilla se embarcan en una misión para
-                  rescatarlo. En el camino, Woody descubre su pasado como estrella de un programa de televisión y se
-                  enfrenta a la elección entre regresar a casa con Andy o permanecer en el mundo de la colección. La
-                  película explora temas de lealtad, identidad y el valor de la amistad, ofreciendo una emocionante y
-                  conmovedora aventura para los personajes queridos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="card">
-            <img src="img/pixar/mons.jfif" class="card-img" alt="Imagen de Monsters, Inc.">
-            <div class="card-body">
-              <h2 class="name">Monsters, Inc.</h2>
-              <button class="watchlist-btn" aria-label="Ver Monsters, Inc.">Ver</button>
-            </div>
-          </div>
-          <div class="modal" id="toy" aria-hidden="true" aria-modal="true">
-            <div class="modal-container-xl">
-              <div class="modal-header">
-                <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
-                <h3 id="modal-title-dead">
-                  MONSTERS, INC.</h3>
-              </div>
-              <div class="modal-body" aria-labelledby="modal-title-dead">
-                <p>
-                  "Monsters, Inc." es una película animada que se desarrolla en la ciudad de Monstruópolis, donde
-                  monstruos asustadores generan energía a partir de los gritos de los niños humanos. La trama sigue a
-                  James P. Sullivan (Sulley) y su amigo Mike Wazowski, quienes trabajan en la empresa Monsters, Inc. Un
-                  día, una niña humana llamada Boo llega al mundo de los monstruos, desencadenando una serie de eventos
-                  cómicos y emotivos. La película destaca la
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/cita.jpg" class="card-img" alt="Imagen de La primera cita de Raley">
-            <div class="card-body">
-              <h2 class="name">La primera cita de Raley</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/nemo.jfif" class="card-img" alt="Imagen de Buscando a Nemo">
-            <div class="card-body">
-              <h2 class="name">Buscando a Nemo</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/cars.jfif" class="card-img" alt="Imagen de Cars">
-            <div class="card-body">
-              <h2 class="name">Cars</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/increibles.jfif" class="card-img" alt="Imagen de Los Increibles">
-            <div class="card-body">
-              <h2 class="name">Los Increibles</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="img/pixar/rata.jpeg" class="card-img" alt="Imagen de Ratatouille">
-            <div class="card-body">
-              <h2 class="name">Ratatouille</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/walli.jpg" class="card-img" alt="Imagen de WALL·E">
-            <div class="card-body">
-              <h2 class="name">WALL·E</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/brave.jpeg" class="card-img" alt="Imagen de Brave">
-            <div class="card-body">
-              <h2 class="name">Brave</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/up.jfif" class="card-img" alt="Imagen de Up: Una Aventura de Altura">
-            <div class="card-body">
-              <h2 class="name">Up: Una Aventura de Altura</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/toy3.jfif" class="card-img" alt="Imagen de Toy Story 3">
-            <div class="card-body">
-              <h2 class="name">Toy Story 3</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/pixar/cars2.jfif" class="card-img" alt="Imagen de Cars 2">
-            <div class="card-body">
-              <h2 class="name">Cars 2</h2>
-              <button class="watchlist-btn">Ver</button>
-            </div>
-          </div>
-          <!-- Series -->
+    <!-- Buscando a Dory -->
+    <div class="card">
+      <img src="img/pixar/dory.jpeg" class="card-img" alt="Imagen de Buscando a Dory">
+      <div class="card-body">
+        <h2 class="name">Buscando a Dory</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('dor', 'close-xl');"
+          aria-label="Ver Buscando a Dory">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Buscando a Dory -->
+    <div class="modal" id="dor" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">BUSCANDO A DORY</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Buscando a Dory" es una película animada de Pixar que sigue a Dory, un pez cirujano azul con problemas de
+            memoria a corto plazo, en su búsqueda para reunirse con su familia. La historia se desarrolla un año después
+            de los eventos de "Buscando a Nemo", cuando Dory comienza a recordar fragmentos de su pasado y se embarca en
+            una aventura para encontrar a sus padres perdidos. Con la ayuda de Marlin y Nemo, Dory enfrenta desafíos
+            emocionales y peligros mientras navega por el vasto océano. La película destaca la importancia del amor, la
+            familia y la aceptación de las diferencias mientras Dory descubre su propia fuerza y valentía a lo largo del
+            camino.
+          </p>
         </div>
       </div>
-      <h1 class="title">POPULAR</h1>
-      <div class="card-container">
-        <div class="card">
-          <img src="img/pixar/uni.jpeg" class="card-img" alt="Imagen de Monsters University">
-          <div class="card-body">
-            <h2 class="name">Monsters University</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/inside.jpeg" class="card-img" alt="Imagen de Inside Out">
-          <div class="card-body">
-            <h2 class="name">Inside Out</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/arlo.jpeg" class="card-img" alt="Imagen de El Viaje de Arlo">
-          <div class="card-body">
-            <h2 class="name">El Viaje de Arlo</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/dory.jpeg" class="card-img" alt="Imagen de Buscando a Dory">
-          <div class="card-body">
-            <h2 class="name">Buscando a Dory</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/coco.jpg" class="card-img" alt="Imagen de Coco">
-          <div class="card-body">
-            <h2 class="name">Coco</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/cars3.jpeg" class="card-img" alt="Imagen de Cars 3">
-          <div class="card-body">
-            <h2 class="name">Cars 3</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/inc2.jpeg" class="card-img" alt="Imagen de Los Increíbles 2">
-          <div class="card-body">
-            <h2 class="name">Los Increíbles 2</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/toy4.jpeg" class="card-img" alt="Imagen de Toy Story 4">
-          <div class="card-body">
-            <h2 class="name">Toy Story 4</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/on.jpeg" class="card-img" alt="Imagen de Onward">
-          <div class="card-body">
-            <h2 class="name">Onward</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/soul.jpg" class="card-img" alt="Imagen de Soul">
-          <div class="card-body">
-            <h2 class="name">Soul</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/luca.jpg" class="card-img" alt="Imagen de Luca">
-          <div class="card-body">
-            <h2 class="name">Luca</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/pixar/light.jpeg" class="card-img" alt="Imagen de Lightyear">
-          <div class="card-body">
-            <h2 class="name">Lightyear</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
-        </div>
+    </div>
+    <!--  -->
 
-        <div class="card">
-          <img src="img/pixar/red.jpeg" class="card-img" alt="Imagen de Red">
-          <div class="card-body">
-            <h2 class="name">Red</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
+    <!--  -->
+    <!-- Coco -->
+    <div class="card">
+      <img src="img/pixar/coco.jpg" class="card-img" alt="Imagen de Coco">
+      <div class="card-body">
+        <h2 class="name">Coco</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('COCO', 'close-xl');"
+          aria-label="Ver Coco">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Coco -->
+    <div class="modal" id="COCO" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">COCO</h3>
         </div>
-        <div class="card">
-          <img src="img/pixar/ele.jpeg" class="card-img" alt="Imagen de Elemental">
-          <div class="card-body">
-            <h2 class="name">Elemental</h2>
-            <button class="watchlist-btn">Ver</button>
-          </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Coco" es una película animada de Pixar que sigue la historia de Miguel, un joven mexicano apasionado por la
+            música, a pesar de la prohibición de su familia. En el Día de los Muertos, Miguel se encuentra
+            accidentalmente en la Tierra de los Muertos, donde descubre secretos familiares ocultos y se embarca en una
+            emocionante búsqueda para desentrañar el misterio detrás de la aversión de su familia hacia la música. A
+            través de esta aventura, la película celebra la cultura mexicana, la importancia de la familia, y explora
+            temas de memoria, identidad y legado. "Coco" recibió elogios por su rica narrativa, emotiva música y su
+            impresionante representación visual del Día de los Muertos.
+          </p>
         </div>
       </div>
-  </main>
+    </div>
 
+    <!-- Cars 3 -->
+    <div class="card">
+      <img src="img/pixar/cars3.jpeg" class="card-img" alt="Imagen de Cars 3">
+      <div class="card-body">
+        <h2 class="name">Cars 3</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('cars3', 'close-xl');"
+          aria-label="Ver Cars 3">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Cars 3 -->
+    <div class="modal" id="cars3" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">CARS 3</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Cars 3" es la tercera entrega de la franquicia "Cars" de Pixar. La historia se centra en Rayo McQueen, el
+            coche de carreras, que se enfrenta a nuevos desafíos en el mundo de las carreras de alta velocidad. A medida
+            que una nueva generación de corredores de alta tecnología amenaza con relegar a Rayo al olvido, él se
+            embarca en un esfuerzo por demostrar que aún puede competir y ganar. La película aborda temas de
+            envejecimiento, superación y la importancia de la experiencia y la sabiduría. "Cars 3" combina acción, humor
+            y mensajes inspiradores mientras Rayo McQueen lucha por encontrar su lugar en un mundo cambiante.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Los Increíbles 2 -->
+    <div class="card">
+      <img src="img/pixar/inc2.jpeg" class="card-img" alt="Imagen de Los Increíbles 2">
+      <div class="card-body">
+        <h2 class="name">Los Increíbles 2</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('inc2', 'close-xl');"
+          aria-label="Ver Los Increíbles 2">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Los Increíbles 2 -->
+    <div class="modal" id="inc2" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">LOS INCREÍBLES 2</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Los Increíbles 2" continúa la historia de la familia Parr, una familia de superhéroes, después de los
+            eventos de la primera película. En esta secuela, Helen Parr (Elastigirl) se convierte en el foco de atención
+            mientras lucha contra el crimen y trabaja para restaurar la confianza del público en los superhéroes.
+            Mientras tanto, Bob Parr (Mr. Increíble) enfrenta el desafío de cuidar a sus hijos, incluido el bebé
+            Jack-Jack, cuyos superpoderes emergentes complican aún más las cosas. La película explora temas de familia,
+            equilibrio entre el trabajo y la vida personal, y la importancia de aceptar y valorar las habilidades
+            individuales. "Los Increíbles 2" es una emocionante y entretenida continuación de la historia original que
+            cautiva a audiencias de todas las edades.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toy Story 4 -->
+    <div class="card">
+      <img src="img/pixar/toy4.jpeg" class="card-img" alt="Imagen de Toy Story 4">
+      <div class="card-body">
+        <h2 class="name">Toy Story 4</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('toy4', 'close-xl');"
+          aria-label="Ver Toy Story 4">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Toy Story 4 -->
+    <div class="modal" id="toy4" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">TOY STORY 4</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Toy Story 4" continúa la saga de los juguetes de Andy, ahora bajo el cuidado de Bonnie, una niña que hereda
+            a Woody, Buzz y el resto de la pandilla. En esta entrega, Woody se embarca en una aventura inesperada cuando
+            se encuentra con Bo Peep, quien ha vivido una vida independiente desde que fue separada del grupo. La
+            película explora temas de identidad, lealtad y el significado del propósito en la vida, mientras Woody se
+            enfrenta a decisiones difíciles sobre su lealtad a su dueño y su propia felicidad. "Toy Story 4" combina la
+            emoción, la comedia y la profundidad emocional característica de la franquicia, ofreciendo una conclusión
+            conmovedora y satisfactoria para los queridos personajes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Onward -->
+    <div class="card">
+      <img src="img/pixar/on.jpeg" class="card-img" alt="Imagen de Onward">
+      <div class="card-body">
+        <h2 class="name">Onward</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('on', 'close-xl');"
+          aria-label="Ver Onward">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Onward -->
+    <div class="modal" id="on" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">ONWARD</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Onward" es una película animada de Pixar que sigue la historia de dos hermanos elfos adolescentes, Ian y
+            Barley Lightfoot, que viven en un mundo de fantasía suburbana. En un esfuerzo por traer de vuelta a su
+            difunto padre durante un día, los hermanos emprenden una búsqueda mágica utilizando un antiguo hechizo. Sin
+            embargo, las cosas no salen como esperaban y se embarcan en una aventura llena de desafíos y
+            descubrimientos. La película aborda temas de lazos familiares, autoaceptación y la magia que se puede
+            encontrar en las experiencias cotidianas. "Onward" combina humor, fantasía y emociones genuinas para ofrecer
+            una conmovedora historia sobre la importancia de apreciar lo que se tiene y el poder de la conexión
+            familiar.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soul -->
+    <div class="card">
+      <img src="img/pixar/soul.jpg" class="card-img" alt="Imagen de Soul">
+      <div class="card-body">
+        <h2 class="name">Soul</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('so', 'close-xl');"
+          aria-label="Ver Soul">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Soul -->
+    <div class="modal" id="so" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">SOUL</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Soul" es una película animada de Pixar que sigue la historia de Joe Gardner, un apasionado pianista de jazz
+            que anhela tener éxito en la industria musical. Después de un accidente que casi le cuesta la vida, su alma
+            se separa de su cuerpo y se encuentra en el Gran Antes, un lugar donde las almas adquieren personalidades y
+            se preparan para encarnarse en la Tierra. Determinado a regresar a su vida, Joe se une a 22, una alma joven
+            con una visión cínica de la vida, en una búsqueda para descubrir el verdadero significado de vivir. La
+            película explora temas complejos como la pasión, la identidad y el propósito, ofreciendo una mirada
+            reflexiva sobre lo que realmente importa en la vida. "Soul" es elogiada por su hermosa animación, su
+            conmovedora historia y su poderoso mensaje sobre la importancia de encontrar la felicidad en las pequeñas
+            cosas y apreciar la belleza de la existencia humana.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Luca -->
+    <div class="card">
+      <img src="img/pixar/luca.jpg" class="card-img" alt="Imagen de Luca">
+      <div class="card-body">
+        <h2 class="name">Luca</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('luc', 'close-xl');"
+          aria-label="Ver Luca">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Luca -->
+    <div class="modal" id="luc" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">LUCA</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            "Luca" es una película animada de Pixar que sigue la historia de un joven monstruo marino llamado Luca, que
+            vive bajo el agua cerca de la costa italiana. Aunque su familia le advierte sobre los peligros de
+            interactuar con los humanos, Luca se embarca en una aventura en la superficie, donde descubre la amistad con
+            Alberto, otro monstruo marino, y experimenta la vida en un pintoresco pueblo costero. La película explora
+            temas de aceptación, la superación del miedo a lo desconocido y la amistad, mientras Luca y Alberto intentan
+            ocultar su verdadera identidad. "Luca" es conocida por su hermosa animación, su encanto nostálgico y su
+            conmovedora historia sobre la conexión entre diferentes mundos y la importancia de ser fiel a uno mismo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightyear -->
+    <div class="card">
+      <img src="img/pixar/light.jpeg" class="card-img" alt="Imagen de Lightyear">
+      <div class="card-body">
+        <h2 class="name">Lightyear</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('light', 'close-xl');"
+          aria-label="Ver Lightyear">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Lightyear -->
+    <div class="modal" id="light" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">LIGHTYEAR</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>La historia del origen de Buzz Lightyear, el héroe que inspiró el juguete, y que nos da a conocer al
+            legendario Guardián Espacial que acabaría contando con generaciones de fans.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Red -->
+    <div class="card">
+      <img src="img/pixar/red.jpeg" class="card-img" alt="Imagen de Red">
+      <div class="card-body">
+        <h2 class="name">Red</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('red', 'close-xl');"
+          aria-label="Ver Red">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Red -->
+    <div class="modal" id="red" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">RED</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            Mei Lee, una niña de 13 años un poco rara pero segura de sí misma, se debate entre ser la hija obediente que
+            su madre quiere que sea y el caos propio de la adolescencia. Ming, su protectora y ligeramente exigente
+            madre, no se separa nunca de ella lo que es una situación poco deseable para una adolescente. Y por si los
+            cambios en su vida y en su cuerpo no fueran suficientes, cada vez que se emociona demasiado (lo que le
+            ocurre prácticamente todo el tiempo), se convierte en un panda rojo gigante.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elemental -->
+    <div class="card">
+      <img src="img/pixar/ele.jpeg" class="card-img" alt="Imagen de Elemental">
+      <div class="card-body">
+        <h2 class="name">Elemental</h2>
+        <button class="watchlist-btn" type="button" onclick="openModal('ele', 'close-xl');"
+          aria-label="Ver Elemental">Ver</button>
+      </div>
+    </div>
+    <!-- Modal Elemental -->
+    <div class="modal" id="ele" aria-hidden="true" aria-modal="true">
+      <div class="modal-container-xl">
+        <div class="modal-header">
+          <span id="close-xl" aria-label="Cerrar modal"><i class="fa fa-times">X</i></span>
+          <h3 id="modal-title-dead">ELEMENTAL</h3>
+        </div>
+        <div class="modal-body" aria-labelledby="modal-title-dead">
+          <p>
+            Ambientada en Ciudad Elemento, donde conviven habitantes de fuego, agua, tierra y aire. La protagonista de
+            la historia es Candela, una joven fuerte, ingeniosa y con carácter, cuya amistad con un chico sensible,
+            afable y tranquilo, llamado Nilo, cambia su perspectiva sobre el mundo en el que viven.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>Sobre Nosotros</h6>
-          <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales peliculas</p>
+          <p class="text-justify">Maria <i>DISNEY</i> Pagina web centrada en el resumen de las principales peliculas
+          </p>
         </div>
 
         <div class="col-xs-6 col-md-3">
