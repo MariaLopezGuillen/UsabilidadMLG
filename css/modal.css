@@ -12,3 +12,7 @@
 .modal-header {
   background-color: rgb(250, 167, 167);
 }
+iframe{
+  width: 600px;
+  height: 250px;
+}

@@ -40,6 +40,6 @@ function openModal(elementModal, elementClose) {
       if (event.key === "Escape") {
          closeModal();
       }
-   });
+     });
 
 }
